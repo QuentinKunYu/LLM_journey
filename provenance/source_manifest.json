@@ -1,0 +1,57 @@
+[
+  {
+    "source_file": "category-only/responses.jsonl",
+    "bytes": 2697802,
+    "sha256": "45f5ae25ba726e9312130c775b87014f20cb1eaf4cae33633cdb4f997771ff01"
+  },
+  {
+    "source_file": "positioning/main-direct.jsonl",
+    "bytes": 22422481,
+    "sha256": "551e25e45c4281dc56465b7abe06826932ec8852c69794fdc550efaf4c28a8ec"
+  },
+  {
+    "source_file": "positioning/main-google.jsonl",
+    "bytes": 5420483,
+    "sha256": "df41eff3eb2ca80445cbddcb3648fe5232bb6948a57a02f511b5192507280b68"
+  },
+  {
+    "source_file": "positioning/cat-food-direct.jsonl",
+    "bytes": 3098047,
+    "sha256": "a5860fcf96cb667837bcd7a0c0841759a1b6bc0d62af540f9fbfe87fafb6a136"
+  },
+  {
+    "source_file": "positioning/cat-food-google.jsonl",
+    "bytes": 959906,
+    "sha256": "398eeac8d52460663587e0ceebac9e2f37244b9e5b93be3f579ca10ea0ba7dc3"
+  },
+  {
+    "source_file": "positioning/coffee-direct.jsonl",
+    "bytes": 2837150,
+    "sha256": "9a26a41b4b906c48c178f248164b4db50bcf6db23dc42b9f7d4efae78c10358d"
+  },
+  {
+    "source_file": "positioning/coffee-google.jsonl",
+    "bytes": 900222,
+    "sha256": "1e16b8fdde0e45fdc014ba1340280e40a6aa9274e3ec66c742f9d8b11ce01e9d"
+  },
+  {
+    "source_file": "brand-positioning-scores.xlsx",
+    "bytes": 27572,
+    "sha256": "3e50094e85834aa3073b9160497b6623c5aadfd88aad087e86d9e35a388732e3"
+  },
+  {
+    "source_file": "recommendations-and-ndcg-final.xlsx",
+    "bytes": 1269462,
+    "sha256": "cf1935ee2e73c565dab051212c226707ea2a960c395428834a63ec67b3e20b1f"
+  },
+  {
+    "source_file": "marketplace-merged.csv",
+    "bytes": 32393,
+    "sha256": "9e1a9ccdb1965f7e4e2157b1cf55c8c31eb3727e7f5cf97203407a01279e2bf7"
+  },
+  {
+    "source_file": "inter-rater-reliability-output.html",
+    "bytes": 632341,
+    "sha256": "251a87947e0e610fd7c1d9fa62906532ef2c2b18361e2ab131101fa37e0edd9c"
+  }
+]

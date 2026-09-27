@@ -1,0 +1,97 @@
+model,category,position_dimension,target_endpoint,runs,mean_ndcg_at_5,sd_ndcg_at_5
+claude-opus-4-7,Coffee Maker,Barista involvement,high,120,0.6559368602609993,0.3641132067430434
+claude-sonnet-4-6,Coffee Maker,Barista involvement,high,120,0.38137912694901177,0.3879157073849676
+gemini-2.5-flash,Coffee Maker,Barista involvement,high,120,0.5862304659831721,0.3745267065567895
+gemini-3.1-pro-preview,Coffee Maker,Barista involvement,high,120,0.6633162510005792,0.3626984297915826
+gpt-5.4-mini,Coffee Maker,Barista involvement,high,120,0.6912366023505448,0.3024541184909101
+gpt-5.5,Coffee Maker,Barista involvement,high,120,0.6988755638866445,0.304879573923272
+claude-opus-4-7,Coffee Maker,Barista involvement,low,120,0.8896960557615562,0.047858190912128167
+claude-sonnet-4-6,Coffee Maker,Barista involvement,low,120,0.8534830967072257,0.05631067160233072
+gemini-2.5-flash,Coffee Maker,Barista involvement,low,120,0.8604149813533145,0.07212991828299148
+gemini-3.1-pro-preview,Coffee Maker,Barista involvement,low,120,0.9314075278088519,0.025386415956687183
+gpt-5.4-mini,Coffee Maker,Barista involvement,low,120,0.851218998731488,0.07226956391501617
+gpt-5.5,Coffee Maker,Barista involvement,low,120,0.9127510549822399,0.030241196072199453
+claude-opus-4-7,Coffee Maker,Brew focus,high,120,0.9570750626622363,0.03752801559327056
+claude-sonnet-4-6,Coffee Maker,Brew focus,high,120,0.7760867969673662,0.18133809280613
+gemini-2.5-flash,Coffee Maker,Brew focus,high,120,0.9261305246167416,0.04853091234489108
+gemini-3.1-pro-preview,Coffee Maker,Brew focus,high,120,0.9558263605012397,0.034290573351889134
+gpt-5.4-mini,Coffee Maker,Brew focus,high,120,0.9435978187585603,0.08578683451901456
+gpt-5.5,Coffee Maker,Brew focus,high,120,0.941989108917691,0.04241735142640199
+claude-opus-4-7,Coffee Maker,Brew focus,low,120,0.9197656682794696,0.03487286860223734
+claude-sonnet-4-6,Coffee Maker,Brew focus,low,120,0.8494962761039877,0.024636974389739608
+gemini-2.5-flash,Coffee Maker,Brew focus,low,120,0.925260793054057,0.03643365031120534
+gemini-3.1-pro-preview,Coffee Maker,Brew focus,low,120,0.8841178445264221,0.047757825623216045
+gpt-5.4-mini,Coffee Maker,Brew focus,low,120,0.8628437361063689,0.039656603342789976
+gpt-5.5,Coffee Maker,Brew focus,low,120,0.8941394830807298,0.036957303490186756
+claude-opus-4-7,Cat Food,Cat food tier,high,120,0.8912473071955173,0.04937996456134739
+claude-sonnet-4-6,Cat Food,Cat food tier,high,120,0.8843794954375959,0.0659190172836456
+gemini-2.5-flash,Cat Food,Cat food tier,high,120,0.7704400889280532,0.05277287168039976
+gemini-3.1-pro-preview,Cat Food,Cat food tier,high,120,0.8840224212871942,0.055670910299786415
+gpt-5.4-mini,Cat Food,Cat food tier,high,120,0.8687760571083104,0.06426644637012163
+gpt-5.5,Cat Food,Cat food tier,high,120,0.7705438286116896,0.21503877853262404
+claude-opus-4-7,Cat Food,Cat food tier,low,120,0.9818097300247824,0.011197342801048848
+claude-sonnet-4-6,Cat Food,Cat food tier,low,120,0.9663666640583329,0.006569380152376128
+gemini-2.5-flash,Cat Food,Cat food tier,low,120,0.9571328213758341,0.038162412359296426
+gemini-3.1-pro-preview,Cat Food,Cat food tier,low,120,0.9603532982278241,0.007175226646907877
+gpt-5.4-mini,Cat Food,Cat food tier,low,120,0.9721265682651224,0.012685156019826024
+gpt-5.5,Cat Food,Cat food tier,low,120,0.9711731517906318,0.010847453305309491
+claude-opus-4-7,Boat Cruise,Cruise positioning,high,120,0.9652440556103948,0.014458155308617358
+claude-sonnet-4-6,Boat Cruise,Cruise positioning,high,120,0.9557958613925758,0.022318438653183233
+gemini-2.5-flash,Boat Cruise,Cruise positioning,high,120,0.9452628207857766,0.03677258608405751
+gemini-3.1-pro-preview,Boat Cruise,Cruise positioning,high,120,0.9538986464070582,0.02411849277469966
+gpt-5.4-mini,Boat Cruise,Cruise positioning,high,120,0.9579177323477222,0.022338372403294424
+gpt-5.5,Boat Cruise,Cruise positioning,high,120,0.9525362333006616,0.02757325107419582
+claude-opus-4-7,Boat Cruise,Cruise positioning,low,120,0.9650452939122386,0.03480161334962647
+claude-sonnet-4-6,Boat Cruise,Cruise positioning,low,120,0.9812906221189704,0.011426905794361192
+gemini-2.5-flash,Boat Cruise,Cruise positioning,low,120,0.9582941400766778,0.0471078702936655
+gemini-3.1-pro-preview,Boat Cruise,Cruise positioning,low,120,0.9725311416378584,0.017989270547317283
+gpt-5.4-mini,Boat Cruise,Cruise positioning,low,120,0.9615538892327549,0.039956860307437905
+gpt-5.5,Boat Cruise,Cruise positioning,low,120,0.9666462990339109,0.030584006237142924
+claude-opus-4-7,Hiking Jacket,Jacket tier,high,120,0.9377236085994478,0.017332402453306903
+claude-sonnet-4-6,Hiking Jacket,Jacket tier,high,120,0.8989763535827802,0.010326835802487316
+gemini-2.5-flash,Hiking Jacket,Jacket tier,high,120,0.9050956990382102,0.027360740225663913
+gemini-3.1-pro-preview,Hiking Jacket,Jacket tier,high,120,0.9020656109176934,0.029803436894427465
+gpt-5.4-mini,Hiking Jacket,Jacket tier,high,120,0.9163518920281246,0.029500659498923845
+gpt-5.5,Hiking Jacket,Jacket tier,high,120,0.9299657188515131,0.0215698034882588
+claude-opus-4-7,Hiking Jacket,Jacket tier,low,120,0.6404451032131748,0.11645144796590788
+claude-sonnet-4-6,Hiking Jacket,Jacket tier,low,120,0.7308656058485875,0.07466901317613621
+gemini-2.5-flash,Hiking Jacket,Jacket tier,low,120,0.6542383309619739,0.10233662590084444
+gemini-3.1-pro-preview,Hiking Jacket,Jacket tier,low,120,0.7543613753235993,0.10659206717083491
+gpt-5.4-mini,Hiking Jacket,Jacket tier,low,120,0.6464924440482139,0.1140544839648636
+gpt-5.5,Hiking Jacket,Jacket tier,low,120,0.6566994195348494,0.12664351873460028
+claude-opus-4-7,Hiking Jacket,Sustainability,high,120,0.9328232194153075,0.026609061077684508
+claude-sonnet-4-6,Hiking Jacket,Sustainability,high,120,0.9245801847202472,0.01786138181724862
+gemini-2.5-flash,Hiking Jacket,Sustainability,high,120,0.8718346175595592,0.047395684893088805
+gemini-3.1-pro-preview,Hiking Jacket,Sustainability,high,120,0.9416983833183064,0.03711778794795389
+gpt-5.4-mini,Hiking Jacket,Sustainability,high,120,0.9453928105945302,0.028390913091960304
+gpt-5.5,Hiking Jacket,Sustainability,high,120,0.9497943907317784,0.020056853072192717
+claude-opus-4-7,Hiking Jacket,Sustainability,low,120,0.596455641819365,0.07091394853676387
+claude-sonnet-4-6,Hiking Jacket,Sustainability,low,120,0.5357350779399623,0.022185539703390763
+gemini-2.5-flash,Hiking Jacket,Sustainability,low,120,0.5580320082979711,0.03302133195168263
+gemini-3.1-pro-preview,Hiking Jacket,Sustainability,low,120,0.6266107885325584,0.03157303685276492
+gpt-5.4-mini,Hiking Jacket,Sustainability,low,120,0.5993961412731125,0.07730471459510804
+gpt-5.5,Hiking Jacket,Sustainability,low,120,0.5664150367079241,0.06962906439468337
+claude-opus-4-7,Cordless Drill,User orientation,high,120,0.9907863079597969,0.0015472623651696135
+claude-sonnet-4-6,Cordless Drill,User orientation,high,120,0.9738384840157964,0.015172498309844464
+gemini-2.5-flash,Cordless Drill,User orientation,high,120,0.9862078683245573,0.017140937109465623
+gemini-3.1-pro-preview,Cordless Drill,User orientation,high,120,0.9915926812606034,0.0017672312077603488
+gpt-5.4-mini,Cordless Drill,User orientation,high,120,0.9877350396086045,0.006534853179454966
+gpt-5.5,Cordless Drill,User orientation,high,120,0.9898637713823465,0.0031502884844938814
+claude-opus-4-7,Cordless Drill,User orientation,low,120,0.3908602323500806,0.07225350180118166
+claude-sonnet-4-6,Cordless Drill,User orientation,low,120,0.33000283721791784,0.038576695093168106
+gemini-2.5-flash,Cordless Drill,User orientation,low,120,0.7262412982709723,0.11775294444115804
+gemini-3.1-pro-preview,Cordless Drill,User orientation,low,120,0.7602584664516933,0.06294352432376756
+gpt-5.4-mini,Cordless Drill,User orientation,low,120,0.5266299957807599,0.10548354881978461
+gpt-5.5,Cordless Drill,User orientation,low,120,0.496572813496021,0.09248679770565073
+claude-opus-4-7,Cat Food,Veterinary to general,high,120,0.468466280149967,0.04343147152899104
+claude-sonnet-4-6,Cat Food,Veterinary to general,high,120,0.5043538094411258,0.06137561368803462
+gemini-2.5-flash,Cat Food,Veterinary to general,high,120,0.521460214770355,0.07386675119233616
+gemini-3.1-pro-preview,Cat Food,Veterinary to general,high,120,0.4888767933089994,0.019289728668464495
+gpt-5.4-mini,Cat Food,Veterinary to general,high,120,0.44171449197611146,0.05457891313990611
+gpt-5.5,Cat Food,Veterinary to general,high,120,0.46580612642152935,0.0365547426642062
+claude-opus-4-7,Cat Food,Veterinary to general,low,120,0.8647335244271299,0.013497378988293222
+claude-sonnet-4-6,Cat Food,Veterinary to general,low,120,0.8753429812881651,0.01582945218123088
+gemini-2.5-flash,Cat Food,Veterinary to general,low,120,0.8415146942321701,0.029595562427414686
+gemini-3.1-pro-preview,Cat Food,Veterinary to general,low,120,0.8448072054587142,0.02702674897371735
+gpt-5.4-mini,Cat Food,Veterinary to general,low,120,0.824208668212958,0.022212586871017057
+gpt-5.5,Cat Food,Veterinary to general,low,120,0.8583475896642304,0.04474162988117218

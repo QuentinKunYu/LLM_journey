@@ -1,0 +1,213 @@
+brand_key,category,brand,responses,brp_at_1,brp_at_3,brp_at_5,mrr_at_5
+BC2,Boat Cruise,American Cruise Lines,240,0,0,0,0
+BC4,Boat Cruise,Carnival,240,0.020833333333333332,0.1875,0.4,0.12861111111111104
+BC5,Boat Cruise,Celebrity Cruises,240,0.008333333333333333,0.575,0.6875,0.2708333333333333
+BC9,Boat Cruise,Disney Cruise Line,240,0,0.029166666666666667,0.2375,0.055625
+BC10,Boat Cruise,Holland America Line,240,0,0,0.0875,0.018333333333333337
+BC6,Boat Cruise,Lindblad Expeditions,240,0,0,0,0
+BC11,Boat Cruise,MSC Cruises,240,0,0,0,0
+BC12,Boat Cruise,NCL,240,0,0.425,0.8041666666666667,0.23451388888888933
+BC7,Boat Cruise,Ponant,240,0,0,0.0125,0.0025000000000000005
+BC13,Boat Cruise,Princess (Cruises),240,0.15,0.23333333333333334,0.7916666666666666,0.31229166666666686
+BC14,Boat Cruise,Royal Caribbean,240,0.3625,0.8833333333333333,0.975,0.632638888888889
+BC16,Boat Cruise,Viking (Cruising),240,0.45,0.4791666666666667,0.6083333333333333,0.48993055555555587
+BC1,Boat Cruise,AmaWaterways,240,0,0,0.004166666666666667,0.0008333333333333334
+BC3,Boat Cruise,Avalon Waterways,240,0,0,0,0
+BC17,Boat Cruise,Costa (Cruises),240,0,0,0,0
+BC8,Boat Cruise,CroisiEurope,240,0,0,0,0
+BC18,Boat Cruise,Crystal (Cruising),240,0,0,0,0
+BC19,Boat Cruise,Cunard,240,0,0.004166666666666667,0.004166666666666667,0.0013888888888888887
+BC20,Boat Cruise,Oceania Cruises,240,0,0.020833333333333332,0.029166666666666667,0.01111111111111111
+BC21,Boat Cruise,Regent Seven Seas Cruises,240,0,0.004166666666666667,0.016666666666666666,0.004791666666666666
+BC22,Boat Cruise,Seabourn,240,0,0,0,0
+BC23,Boat Cruise,Silversea,240,0,0.12083333333333333,0.14166666666666666,0.06493055555555556
+BC15,Boat Cruise,Uniworld Boutique River Cruises,240,0,0,0,0
+BC24,Boat Cruise,Virgin Voyages,240,0.004166666666666667,0.004166666666666667,0.029166666666666667,0.009166666666666665
+BC25,Boat Cruise,Windstar,240,0,0.016666666666666666,0.12916666666666668,0.03090277777777779
+BC26,Boat Cruise,Azamara,240,0,0,0,0
+BC27,Boat Cruise,Quark Expeditions,240,0,0,0,0
+BC28,Boat Cruise,HX (Hurtigruten Expeditions),240,0,0,0,0
+BC29,Boat Cruise,SeaDream Yacht Club,240,0,0,0,0
+BC30,Boat Cruise,Aurora Expeditions,240,0,0,0,0
+BC31,Boat Cruise,UnCruise Adventures,240,0,0,0,0
+BC32,Boat Cruise,Explora Journeys,240,0,0,0,0
+BC34,Boat Cruise,Paul Gauguin Cruises,240,0,0,0,0
+BC35,Boat Cruise,Oceanwide Expeditions,240,0,0,0,0
+BC36,Boat Cruise,Adventure Canada,240,0,0,0,0
+BC39,Boat Cruise,Scenic,240,0,0,0,0
+BC40,Boat Cruise,Swan Hellenic,240,0,0,0,0
+CF1,Cat Food,Blue Buffalo,240,0,0.004166666666666667,0.3625,0.08076388888888884
+CF2,Cat Food,Fancy Feast,240,0,0,0.004166666666666667,0.0008333333333333334
+CF3,Cat Food,Friskies,240,0,0,0,0
+CF4,Cat Food,Hill's,240,0.125,0.9791666666666666,0.9916666666666667,0.5237500000000002
+CF5,Cat Food,IAMS,240,0,0,0.14583333333333334,0.035
+CF18,Cat Food,Meow Mix,240,0,0,0,0
+CF6,Cat Food,Merrick,240,0,0,0.020833333333333332,0.004375
+CF8,Cat Food,"Purina (ambiguous, parent brand)",240,0,0,0,0
+CF9,Cat Food,Royal Canin,240,0.6375,0.9791666666666666,0.9875,0.7810416666666683
+CF10,Cat Food,Taste of the Wild,240,0,0,0.004166666666666667,0.0008333333333333334
+CF11,Cat Food,Wellness,240,0,0.004166666666666667,0.6041666666666666,0.1416666666666666
+CF26,Cat Food,Wellness Complete Health,240,0,0,0.041666666666666664,0.009166666666666667
+CF24,Cat Food,Whiskas,240,0,0,0,0
+CF14,Cat Food,9 Lives,240,0,0,0,0
+CF15,Cat Food,Acana,240,0,0,0,0
+CF16,Cat Food,(Purina) Cat Chow,240,0,0,0,0
+CF17,Cat Food,Freshpet,240,0,0,0,0
+CF19,Cat Food,Nutrish,240,0,0,0,0
+CF20,Cat Food,Nutro,240,0,0,0,0
+CF7,Cat Food,Orijen,240,0,0,0.425,0.0941666666666666
+CF27,Cat Food,Purina One,240,0,0,0,0
+CF28,Cat Food,Purina Pro Plan,240,0.21666666666666667,0.9833333333333333,0.9958333333333333,0.49923611111111094
+CF23,Cat Food,Sheba,240,0,0,0,0
+CF29,Cat Food,Wellness CORE,240,0,0,0.075,0.01541666666666667
+CF25,Cat Food,Ziwi Peak,240,0,0,0.004166666666666667,0.0010416666666666667
+CF30,Cat Food,Tiki cat,240,0,0.016666666666666666,0.1125,0.027222222222222228
+CF31,Cat Food,Smalls,240,0,0,0,0
+CF32,Cat Food,Rayne Nutrition,240,0,0,0,0
+CF33,Cat Food,Farmina,240,0,0,0,0
+CF34,Cat Food,Weruva,240,0,0,0,0
+CF35,Cat Food,Stella & Chewy's,240,0,0,0,0
+CF36,Cat Food,Open Farm,240,0,0,0,0
+CF37,Cat Food,Feline Natural,240,0,0,0,0
+CF38,Cat Food,Instinct,240,0,0,0,0
+CF40,Cat Food,Primal Pet Foods,240,0,0,0,0
+CF42,Cat Food,The Honest Kitchen,240,0,0,0,0
+CF43,Cat Food,RAWZ,240,0,0,0,0
+CF44,Cat Food,Raised Right,240,0,0,0,0
+CF46,Cat Food,Viva Raw,240,0,0,0,0
+CF47,Cat Food,Vital Essentials,240,0,0,0,0
+CF48,Cat Food,Virbac Veterinary HPM,240,0,0,0,0
+CF49,Cat Food,Koha,240,0,0,0,0
+CF50,Cat Food,Nulo,240,0,0,0,0
+CF51,Cat Food,Hound & Gatos,240,0,0,0,0
+CF52,Cat Food,Caru,240,0,0,0,0
+CF53,Cat Food,Dr. Elsey’s,240,0,0,0,0
+CF54,Cat Food,JustFoodForCats,240,0,0,0,0
+CF55,Cat Food,Smallbatch Pets,240,0,0,0,0
+CF56,Cat Food,Annamaet,240,0,0,0,0
+CF57,Cat Food,Forza10,240,0,0,0,0
+CF58,Cat Food,Fromm,240,0,0,0,0
+CF59,Cat Food,Canidae,240,0,0,0,0
+CF60,Cat Food,Darwin's Natural Pet Products,240,0,0,0,0
+CF62,Cat Food,Fussie Cat,240,0,0,0,0
+CF64,Cat Food,Kirkland Signature,240,0,0,0,0
+CF65,Cat Food,Kit & Kaboodle,240,0,0,0,0
+CF67,Cat Food,Schesir,240,0,0,0,0
+CF68,Cat Food,Solid Gold,240,0,0,0,0
+CM1,Coffee Maker,Bonavita,240,0,0.15416666666666667,0.45416666666666666,0.11972222222222215
+CM2,Coffee Maker,Breville,240,0.6541666666666667,1,1,0.8270833333333333
+CM4,Coffee Maker,Cuisinart,240,0,0.13333333333333333,0.5625,0.1419444444444444
+CM5,Coffee Maker,DeLonghi,240,0,0.1625,0.29583333333333334,0.08479166666666665
+CM6,Coffee Maker,Hamilton Beach,240,0,0,0.020833333333333332,0.004166666666666667
+CM7,Coffee Maker,Keurig,240,0,0,0.20833333333333334,0.044166666666666646
+CM8,Coffee Maker,Mr. Coffee,240,0,0,0.004166666666666667,0.0008333333333333334
+CM9,Coffee Maker,Nespresso,240,0,0.025,0.12916666666666668,0.03208333333333333
+CM10,Coffee Maker,Ninja,240,0,0.10833333333333334,0.5291666666666667,0.1315277777777777
+CM11,Coffee Maker,OXO,240,0,0.4166666666666667,0.7375,0.21201388888888928
+CM12,Coffee Maker,Technivorm,240,0.3458333333333333,1,1,0.6729166666666667
+CM13,Coffee Maker,Bella,240,0,0,0,0
+CM14,Coffee Maker,Black+Decker,240,0,0,0,0
+CM15,Coffee Maker,Braun,240,0,0,0,0
+CM16,Coffee Maker,Brentwood,240,0,0,0,0
+CM3,Coffee Maker,Bunn,240,0,0,0,0
+CM17,Coffee Maker,Capresso,240,0,0,0,0
+CM18,Coffee Maker,Jura,240,0,0,0,0
+CM19,Coffee Maker,KitchenAid,240,0,0,0,0
+CM21,Coffee Maker,Philips,240,0,0,0,0
+CM22,Coffee Maker,La Marzocco,240,0,0,0,0
+CM23,Coffee Maker,Gaggia,240,0,0,0,0
+CM24,Coffee Maker,ECM,240,0,0,0,0
+CM25,Coffee Maker,Profitec,240,0,0,0,0
+CM26,Coffee Maker,Rocket Espresso,240,0,0,0,0
+CM27,Coffee Maker,Rancilio,240,0,0,0,0
+CM28,Coffee Maker,Lelit,240,0,0,0,0
+CM30,Coffee Maker,Fellow,240,0,0,0,0
+CM31,Coffee Maker,Decent Espresso,240,0,0,0,0
+CM32,Coffee Maker,Flair Espresso,240,0,0,0,0
+CM33,Coffee Maker,Slayer,240,0,0,0,0
+CM34,Coffee Maker,Miele,240,0,0,0,0
+CM41,Coffee Maker,Ratio,240,0,0,0,0
+CM42,Coffee Maker,La Pavoni,240,0,0,0,0
+CM43,Coffee Maker,Synesso,240,0,0,0,0
+CM47,Coffee Maker,Illy,240,0,0,0,0
+CM48,Coffee Maker,Lavazza,240,0,0,0,0
+CM49,Coffee Maker,Zojirushi,240,0,0,0,0
+CM50,Coffee Maker,Victoria Arduino,240,0,0,0,0
+CM51,Coffee Maker,Kees van der Westen,240,0,0,0,0
+CM52,Coffee Maker,Bezzera,240,0,0,0,0
+CM56,Coffee Maker,Dalla Corte,240,0,0,0,0
+CM57,Coffee Maker,Saeco,240,0,0,0,0
+CM60,Coffee Maker,Cafelat,240,0,0,0,0
+CM63,Coffee Maker,Leverpresso,240,0,0,0,0
+CM64,Coffee Maker,Proctor Silex,240,0,0,0,0
+CM65,Coffee Maker,Elektra,240,0,0,0,0
+CM67,Coffee Maker,Bosch,240,0,0,0,0
+CM73,Coffee Maker,Olympia Express,240,0,0,0,0
+CM76,Coffee Maker,Londinium,240,0,0,0,0
+CM77,Coffee Maker,Quick Mill,240,0,0,0,0
+CM78,Coffee Maker,ROK,240,0,0,0,0
+CM82,Coffee Maker,Café,240,0,0,0,0
+CM87,Coffee Maker,Melitta,240,0,0,0,0
+CM90,Coffee Maker,Sanremo,240,0,0,0,0
+CM92,Coffee Maker,Spinn,240,0,0,0,0
+CD1,Cordless Drill,Black+Decker,240,0,0,0.07916666666666666,0.015833333333333338
+CD2,Cordless Drill,Bosch,240,0,0,0.9125,0.2241666666666666
+CD4,Cordless Drill,Dewalt,240,0.9125,1,1,0.9555555555555556
+CD5,Cordless Drill,Makita,240,0.008333333333333333,1,1,0.3569444444444439
+CD6,Cordless Drill,Milwaukee,240,0.07916666666666666,1,1,0.5208333333333331
+CD7,Cordless Drill,Ryobi,240,0,0,0.975,0.2031250000000008
+CD3,Cordless Drill,Craftsman,240,0,0,0,0
+CD8,Cordless Drill,Festool,240,0,0,0,0
+CD9,Cordless Drill,Hilti,240,0,0,0,0
+CD10,Cordless Drill,Kobalt,240,0,0,0,0
+CD11,Cordless Drill,Metabo HPT,240,0,0,0,0
+CD12,Cordless Drill,Ridgid,240,0,0,0.029166666666666667,0.0060416666666666665
+CD13,Cordless Drill,Skil,240,0,0,0,0
+CD14,Cordless Drill,Worx,240,0,0,0.004166666666666667,0.0008333333333333334
+CD15,Cordless Drill,Hart,240,0,0,0,0
+CD16,Cordless Drill,Bauer,240,0,0,0,0
+CD17,Cordless Drill,Hercules,240,0,0,0,0
+CD18,Cordless Drill,Flex,240,0,0,0,0
+CD19,Cordless Drill,Porter-Cable,240,0,0,0,0
+CD20,Cordless Drill,Wen,240,0,0,0,0
+HJ1,Hiking Jacket,Arc'teryx,240,0.9708333333333333,1,1,0.9854166666666667
+HJ2,Hiking Jacket,Black Diamond,240,0,0,0.12916666666666668,0.025833333333333344
+HJ3,Hiking Jacket,Columbia,240,0,0,0.14166666666666666,0.02895833333333335
+HJ4,Hiking Jacket,Mammut,240,0,0.125,0.2916666666666667,0.08333333333333334
+HJ5,Hiking Jacket,Marmot,240,0,0.016666666666666666,0.37916666666666665,0.0893055555555555
+HJ6,Hiking Jacket,Mountain Hardwear,240,0,0.008333333333333333,0.016666666666666666,0.004652777777777778
+HJ7,Hiking Jacket,Outdoor Research,240,0,0.3375,0.8583333333333333,0.2385416666666673
+HJ8,Hiking Jacket,Patagonia,240,0.029166666666666667,1,1,0.5145833333333333
+HJ9,Hiking Jacket,REI Co-op,240,0,0.004166666666666667,0.175,0.036388888888888894
+HJ10,Hiking Jacket,Rab,240,0,0.058333333333333334,0.2875,0.06840277777777776
+HJ11,Hiking Jacket,The North Face,240,0,0.45,0.6666666666666666,0.19708333333333375
+HJ12,Hiking Jacket,Eddie Bauer,240,0,0,0,0
+HJ14,Hiking Jacket,Kathmandu,240,0,0,0,0
+HJ15,Hiking Jacket,KÜHL,240,0,0,0,0
+HJ16,Hiking Jacket,L.L.Bean,240,0,0,0,0
+HJ17,Hiking Jacket,Montane,240,0,0,0.004166666666666667,0.0008333333333333334
+HJ18,Hiking Jacket,Mountain Equipment,240,0,0,0,0
+HJ19,Hiking Jacket,icebreaker,240,0,0,0,0
+HJ21,Hiking Jacket,Helly Hansen,240,0,0,0,0
+HJ22,Hiking Jacket,Fjällräven,240,0,0,0,0
+HJ23,Hiking Jacket,Norrøna,240,0,0,0,0
+HJ25,Hiking Jacket,VAUDE,240,0,0,0,0
+HJ26,Hiking Jacket,Houdini Sportswear,240,0,0,0,0
+HJ27,Hiking Jacket,Cotopaxi,240,0,0,0,0
+HJ28,Hiking Jacket,Picture Organic Clothing,240,0,0,0,0
+HJ29,Hiking Jacket,Merrell,240,0,0,0,0
+HJ30,Hiking Jacket,Páramo,240,0,0,0,0
+HJ32,Hiking Jacket,Montbell,240,0,0,0,0
+HJ33,Hiking Jacket,Salomon,240,0,0,0,0
+HJ34,Hiking Jacket,tentree,240,0,0,0,0
+HJ35,Hiking Jacket,Klättermusen,240,0,0,0,0
+HJ36,Hiking Jacket,Finisterre,240,0,0,0,0
+HJ38,Hiking Jacket,Haglöfs,240,0,0,0,0
+HJ39,Hiking Jacket,Ortovox,240,0,0,0,0
+HJ40,Hiking Jacket,Salewa,240,0,0,0,0
+HJ42,Hiking Jacket,prAna,240,0,0,0,0
+HJ44,Hiking Jacket,Toad&Co,240,0,0,0,0
+HJ46,Hiking Jacket,Bergans of Norway,240,0,0,0,0
+HJ47,Hiking Jacket,Beyond Clothing,240,0,0,0,0
+HJ50,Hiking Jacket,Sierra Designs,240,0,0,0,0
+HJ54,Hiking Jacket,Mountain Warehouse,240,0,0,0,0

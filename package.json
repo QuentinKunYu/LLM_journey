@@ -1,0 +1,24 @@
+{
+  "name": "open-ended-brand-recommendation-audit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Data and code for evaluating retrieval, ranking, and need matching in open-ended LLM brand recommendations.",
+  "scripts": {
+    "analyze:category": "node analysis/analyze-category-only.js",
+    "analyze:positioning": "node analysis/recompute-positioning-ndcg.js",
+    "analyze": "npm run analyze:category && npm run analyze:positioning",
+    "verify": "node analysis/verify-artifact.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@google/generative-ai": "^0.21.0",
+    "csv-parse": "^5.5.3",
+    "csv-stringify": "^6.4.5",
+    "dotenv": "^16.4.5",
+    "openai": "^4.70.0"
+  }
+}

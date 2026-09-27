@@ -1,0 +1,17 @@
+category,dimension,subjects,raters,krippendorff_alpha
+Cat Food,Vet - Commercial,58,3,0.851
+Cat Food,Science - Natural,58,3,0.901
+Cat Food,Traditional - Ultra Premium,58,3,0.890
+Coffee Maker,Auto - Manual,57,3,0.956
+Coffee Maker,Convenience - Ritual,57,3,0.976
+Coffee Maker,Brew Style: Drip - Espresso,57,3,0.966
+Coffee Maker,Build,57,3,0.949
+Hiking Jacket,Technical,43,3,0.926
+Hiking Jacket,Urban,43,3,0.837
+Hiking Jacket,Value,43,3,0.816
+Hiking Jacket,Sustainability,43,3,0.730
+Boat Cruise,Vessel Size,37,3,0.995
+Boat Cruise,Service,37,3,0.929
+Boat Cruise,Conventional - Expedition,37,3,0.932
+Boat Cruise,Family - Adult Only,37,3,0.883
+Cordless Drill,DIY - Prosumer - Pro,20,3,0.964

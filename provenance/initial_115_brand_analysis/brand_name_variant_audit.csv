@@ -1,0 +1,409 @@
+category,normalized_brand,match_status,raw_brand,mentions
+Boat Cruise,Abercrombie & Kent,out_of_set_candidate,Abercrombie & Kent,6
+Boat Cruise,Adventure Canada,out_of_set_candidate,Adventure Canada,2
+Boat Cruise,Aurora Expeditions,out_of_set_candidate,Aurora Expeditions,70
+Boat Cruise,Azamara,out_of_set_candidate,Azamara,269
+Boat Cruise,Carnival,in_set_alias,Carnival Cruise Line,636
+Boat Cruise,Carnival,in_set_alias,🥉 Carnival Cruise Line,2
+Boat Cruise,Celebrity Cruises,in_set_exact,Celebrity Cruises,155
+Boat Cruise,Costa (Cruises),in_set_alias,Costa Cruises,218
+Boat Cruise,Crystal (Cruising),in_set_alias,Crystal Cruises,60
+Boat Cruise,Crystal (Cruising),in_set_alias,Crystal,5
+Boat Cruise,Disney Cruise Line,in_set_exact,Disney Cruise Line,129
+Boat Cruise,Explora Journeys,out_of_set_candidate,Explora Journeys,32
+Boat Cruise,Holland America Line,in_set_exact,Holland America Line,33
+Boat Cruise,HX (Hurtigruten Expeditions),out_of_set_candidate,Hurtigruten Expeditions,145
+Boat Cruise,HX (Hurtigruten Expeditions),out_of_set_candidate,Hurtigruten,36
+Boat Cruise,HX (Hurtigruten Expeditions),out_of_set_candidate,HX,29
+Boat Cruise,HX (Hurtigruten Expeditions),out_of_set_candidate,HX Hurtigruten Expeditions,3
+Boat Cruise,Lindblad Expeditions,in_set_exact,Lindblad Expeditions,160
+Boat Cruise,Lindblad Expeditions,in_set_alias,National Geographic-Lindblad Expeditions,40
+Boat Cruise,Lindblad Expeditions,in_set_alias,Lindblad Expeditions–National Geographic,38
+Boat Cruise,Lindblad Expeditions,in_set_alias,Lindblad Expeditions-National Geographic,2
+Boat Cruise,Marella Cruises,out_of_set_candidate,Marella Cruises,1
+Boat Cruise,MSC Cruises,in_set_exact,MSC Cruises,614
+Boat Cruise,NCL,in_set_alias,Norwegian Cruise Line,718
+Boat Cruise,NCL,in_set_alias,🥈 Norwegian Cruise Line,2
+Boat Cruise,Oceania Cruises,in_set_exact,Oceania Cruises,110
+Boat Cruise,Oceanwide Expeditions,out_of_set_candidate,Oceanwide Expeditions,3
+Boat Cruise,Paul Gauguin Cruises,out_of_set_candidate,Paul Gauguin Cruises,4
+Boat Cruise,Ponant,in_set_exact,Ponant,288
+Boat Cruise,Ponant,in_set_exact,PONANT,4
+Boat Cruise,Ponant,in_set_alias,Ponant Expeditions,3
+Boat Cruise,Princess (Cruises),in_set_alias,Princess Cruises,367
+Boat Cruise,Quark Expeditions,out_of_set_candidate,Quark Expeditions,233
+Boat Cruise,Regent Seven Seas Cruises,in_set_exact,Regent Seven Seas Cruises,259
+Boat Cruise,Regent Seven Seas Cruises,in_set_alias,Regent Seven Seas,25
+Boat Cruise,Royal Caribbean,in_set_alias,Royal Caribbean International,407
+Boat Cruise,Royal Caribbean,in_set_exact,Royal Caribbean,311
+Boat Cruise,Royal Caribbean,in_set_alias,🥇 Royal Caribbean International,2
+Boat Cruise,Scenic Eclipse,out_of_set_candidate,Scenic Eclipse,1
+Boat Cruise,Scenic Luxury Cruises & Tours,out_of_set_candidate,Scenic Luxury Cruises & Tours,1
+Boat Cruise,Seabourn,in_set_exact,Seabourn,459
+Boat Cruise,Seabourn,in_set_alias,Seabourn Cruise Line,11
+Boat Cruise,Seabourn,in_set_alias,Seabourn Expeditions,8
+Boat Cruise,Seabourn,in_set_alias,Seabourn Expedition,4
+Boat Cruise,Seabourn,in_set_alias,Seabourn Venture,3
+Boat Cruise,Seabourn,in_set_alias,Seabourn Expedition Cruises,2
+Boat Cruise,SeaDream Yacht Club,out_of_set_candidate,SeaDream Yacht Club,77
+Boat Cruise,Silversea,in_set_exact,Silversea,400
+Boat Cruise,Silversea,in_set_alias,Silversea Expeditions,175
+Boat Cruise,Silversea,in_set_alias,Silversea Cruises,66
+Boat Cruise,Swan Hellenic,out_of_set_candidate,Swan Hellenic,1
+Boat Cruise,UnCruise Adventures,out_of_set_candidate,UnCruise Adventures,35
+Boat Cruise,Viking (Cruising),in_set_alias,Viking Ocean Cruises,225
+Boat Cruise,Viking (Cruising),in_set_alias,Viking Ocean,4
+Boat Cruise,Viking (Cruising),in_set_alias,Viking Expeditions,3
+Boat Cruise,Windstar,in_set_alias,Windstar Cruises,295
+Boat Cruise,Windstar,in_set_exact,Windstar,3
+Cat Food,(Purina) Cat Chow,in_set_alias,Purina Cat Chow,293
+Cat Food,(Purina) Cat Chow,in_set_alias,Purina Cat Chow Complete,6
+Cat Food,(Purina) Cat Chow,in_set_alias,Purina Cat Chow Naturals,2
+Cat Food,9 Lives,in_set_alias,9Lives,147
+Cat Food,9 Lives,in_set_exact,9 Lives,2
+Cat Food,9 Lives,in_set_alias,9Lives Daily Essentials,2
+Cat Food,Acana,in_set_exact,Acana,128
+Cat Food,Annamaet,out_of_set_candidate,Annamaet,1
+Cat Food,Annamaet,out_of_set_candidate,Annamaet Feline,1
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Natural Veterinary Diet,633
+Cat Food,Blue Buffalo,in_set_exact,Blue Buffalo,233
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Wilderness,13
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Veterinary Diet,12
+Cat Food,Blue Buffalo,in_set_alias,Blue Natural Veterinary Diet,8
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Tastefuls,4
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Healthy Gourmet,3
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Veterinary Diets,2
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Healthy Living,1
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo Indoor Health Chicken & Brown Rice Recipe for Adult Cats,1
+Cat Food,Blue Buffalo,in_set_alias,Blue Buffalo True Solutions,1
+Cat Food,Canidae,out_of_set_candidate,Canidae,1
+Cat Food,Caru,out_of_set_candidate,Caru,3
+Cat Food,Darwin's Natural Pet Products,out_of_set_candidate,Darwin's Natural Pet Products,1
+Cat Food,Dr. Elsey's cleanprotein,out_of_set_candidate,Dr. Elsey's Cleanprotein,2
+Cat Food,Dr. Elsey's cleanprotein,out_of_set_candidate,Dr. Elsey's cleanprotein,1
+Cat Food,Eukanuba,out_of_set_candidate,Eukanuba,65
+Cat Food,Eukanuba,out_of_set_candidate,Eukanuba Veterinary Diets,4
+Cat Food,Fancy Feast,in_set_exact,Fancy Feast,216
+Cat Food,Fancy Feast,in_set_alias,Fancy Feast Classic Pâté,24
+Cat Food,Fancy Feast,in_set_alias,Purina Fancy Feast,5
+Cat Food,Fancy Feast,in_set_alias,Fancy Feast Gourmet Naturals,1
+Cat Food,Farmina,out_of_set_candidate,Farmina Vet Life,258
+Cat Food,Farmina,out_of_set_candidate,Farmina N&D,170
+Cat Food,Farmina,out_of_set_candidate,Farmina,23
+Cat Food,Farmina,out_of_set_candidate,Farmina N&D Quality Ansestral,1
+Cat Food,Farmina,out_of_set_candidate,Farmina Vet Life Veterinary Diet,1
+Cat Food,Feline Natural,out_of_set_candidate,Feline Natural,198
+Cat Food,Feline Natural,out_of_set_candidate,Feline Naturals,5
+Cat Food,Forza10 Active Line,out_of_set_candidate,Forza10 Active Line,2
+Cat Food,Forza10 Nutraceutic,out_of_set_candidate,Forza10 Nutraceutic,1
+Cat Food,Friskies,in_set_exact,Friskies,412
+Cat Food,Friskies,in_set_alias,Purina Friskies,15
+Cat Food,Friskies,in_set_alias,Friskies Pâté or Shreds,5
+Cat Food,Friskies,in_set_alias,Friskies Pâté Wet Food,3
+Cat Food,Friskies,in_set_alias,Friskies Wet Food,3
+Cat Food,Friskies,in_set_alias,Friskies Pâté,1
+Cat Food,Fromm,out_of_set_candidate,Fromm,2
+Cat Food,Fussie Cat,out_of_set_candidate,Fussie Cat,1
+Cat Food,Hare Today,out_of_set_candidate,Hare Today,1
+Cat Food,Hill's,in_set_alias,Hill's Science Diet,1065
+Cat Food,Hill's,in_set_alias,Hill's Prescription Diet,720
+Cat Food,Hill's,in_set_alias,Hill's Science Diet Adult Healthy Cuisine Seared Tuna & Carrot Medley Cat Food,1
+Cat Food,Hill's,in_set_alias,Hills Science Diet,1
+Cat Food,Hound & Gatos,out_of_set_candidate,Hound & Gatos,4
+Cat Food,IAMS,in_set_exact,Iams,907
+Cat Food,IAMS,in_set_alias,Iams ProActive Health,227
+Cat Food,IAMS,in_set_alias,Iams Veterinary Formulas,30
+Cat Food,IAMS,in_set_exact,IAMS,25
+Cat Food,IAMS,in_set_alias,Iams Veterinary Formula,12
+Cat Food,IAMS,in_set_alias,Iams Proactive Health,9
+Cat Food,IAMS,in_set_alias,IAMS ProActive Health,1
+Cat Food,IAMS,in_set_alias,Iams ProActive Health Adult,1
+Cat Food,Instinct,out_of_set_candidate,Instinct,142
+Cat Food,Instinct,out_of_set_candidate,Instinct Original,10
+Cat Food,Instinct,out_of_set_candidate,Instinct Raw,3
+Cat Food,Instinct,out_of_set_candidate,Nature's Variety Instinct,1
+Cat Food,JustFoodForCats,out_of_set_candidate,JustFoodForCats,3
+Cat Food,Kirkland Signature,out_of_set_candidate,Kirkland Signature,1
+Cat Food,Kit & Kaboodle,out_of_set_candidate,Kit & Kaboodle,1
+Cat Food,Koha,out_of_set_candidate,Koha,5
+Cat Food,Meow Mix,in_set_exact,Meow Mix,309
+Cat Food,Meow Mix,in_set_alias,Meow Mix Original Choice,4
+Cat Food,Meow Mix,in_set_alias,Meow Mix Tender Centers,1
+Cat Food,Merrick,in_set_exact,Merrick,108
+Cat Food,Merrick,in_set_alias,Merrick Purrfect Bistro,6
+Cat Food,Merrick,in_set_alias,Merrick Before Grain,1
+Cat Food,Nom Nom,out_of_set_candidate,Nom Nom,41
+Cat Food,Nulo,out_of_set_candidate,Nulo,5
+Cat Food,Nutrish,in_set_alias,Rachael Ray Nutrish,2
+Cat Food,Nutro,in_set_alias,Nutro Wholesome Essentials,1
+Cat Food,Open Farm,out_of_set_candidate,Open Farm,206
+Cat Food,Orijen,in_set_exact,Orijen,453
+Cat Food,Orijen,in_set_alias,Orijen Cat & Kitten,4
+Cat Food,Orijen,in_set_alias,Orijen Cat,2
+Cat Food,Primal Pet Foods,out_of_set_candidate,Primal Pet Foods,43
+Cat Food,Primal Pet Foods,out_of_set_candidate,Primal,18
+Cat Food,Purina,in_set_alias,Purina,10
+Cat Food,Purina One,in_set_exact,Purina ONE,550
+Cat Food,Purina One,in_set_exact,Purina One,150
+Cat Food,Purina One,in_set_alias,Purina ONE Healthy Kitten Food,1
+Cat Food,Purina Pro Plan,in_set_exact,Purina Pro Plan,1046
+Cat Food,Purina Pro Plan,in_set_alias,Purina Pro Plan Veterinary Diets,720
+Cat Food,Raised Right,out_of_set_candidate,Raised Right,16
+Cat Food,RAWZ,out_of_set_candidate,RAWZ,16
+Cat Food,RAWZ,out_of_set_candidate,Rawz,4
+Cat Food,Rayne Clinical Nutrition,out_of_set_candidate,Rayne Clinical Nutrition,447
+Cat Food,Rayne Clinical Nutrition,out_of_set_candidate,Rayne Nutrition,22
+Cat Food,Royal Canin,in_set_exact,Royal Canin,899
+Cat Food,Royal Canin,in_set_alias,Royal Canin Veterinary Diet,718
+Cat Food,Royal Canin,in_set_alias,Royal Canin Feline Health Nutrition,14
+Cat Food,Royal Canin,in_set_alias,Royal Canin Feline Health Nutrition Oral Care Dry Cat Food,1
+Cat Food,Royal Canin,in_set_alias,Royal Canin Veterinary,1
+Cat Food,Sassafras,out_of_set_candidate,Sassafras,1
+Cat Food,Schesir,out_of_set_candidate,Schesir,1
+Cat Food,Sheba,in_set_exact,Sheba,3
+Cat Food,Sheba,in_set_alias,Sheba Perfect Portions,3
+Cat Food,Smallbatch Pets,out_of_set_candidate,Smallbatch Pets,2
+Cat Food,Smallbatch Pets,out_of_set_candidate,Smallbatch,1
+Cat Food,Smalls,in_set_exact,Smalls,259
+Cat Food,Solid Gold,out_of_set_candidate,Solid Gold,1
+Cat Food,Stella & Chewy's,out_of_set_candidate,Stella & Chewy's,251
+Cat Food,Sundays for Cats,out_of_set_candidate,Sundays for Cats,1
+Cat Food,Taste of the Wild,in_set_exact,Taste of the Wild,66
+Cat Food,The Farmer's Dog,out_of_set_candidate,Farmer's Dog,7
+Cat Food,The Farmer's Dog,out_of_set_candidate,The Farmer's Dog,4
+Cat Food,The Farmer's Dog,out_of_set_candidate,Farmers Dog,1
+Cat Food,The Honest Kitchen,out_of_set_candidate,The Honest Kitchen,40
+Cat Food,Tiki cat,in_set_exact,Tiki Cat,385
+Cat Food,Tiki cat,in_set_alias,Tiki Cat After Dark,14
+Cat Food,Virbac Veterinary HPM,out_of_set_candidate,Virbac Veterinary HPM,6
+Cat Food,Vital Essentials,out_of_set_candidate,Vital Essentials,8
+Cat Food,Viva Raw,out_of_set_candidate,Viva Raw,11
+Cat Food,Wellness,in_set_exact,Wellness,270
+Cat Food,Wellness Complete Health,in_set_exact,Wellness Complete Health,129
+Cat Food,Wellness CORE,in_set_exact,Wellness CORE,91
+Cat Food,Wellness CORE,in_set_exact,Wellness Core,6
+Cat Food,Weruva,out_of_set_candidate,Weruva,324
+Cat Food,Whiskas,in_set_exact,Whiskas,85
+Cat Food,Ziwi Peak,in_set_exact,Ziwi Peak,523
+Coffee Maker,1Zpresso,out_of_set_candidate,1Zpresso,6
+Coffee Maker,Able,out_of_set_candidate,Able,1
+Coffee Maker,Acaia,out_of_set_candidate,Acaia,19
+Coffee Maker,AeroPress,out_of_set_candidate,AeroPress,135
+Coffee Maker,AeroPress,out_of_set_candidate,Aeropress,26
+Coffee Maker,AeroPress,out_of_set_candidate,"AeroPress, Inc.",1
+Coffee Maker,Baratza,out_of_set_candidate,Baratza,83
+Coffee Maker,Bellezza,out_of_set_candidate,Bellezza,3
+Coffee Maker,Bezzera,out_of_set_candidate,Bezzera,26
+Coffee Maker,Bialetti,out_of_set_candidate,Bialetti,1
+Coffee Maker,Black+Decker,in_set_exact,Black+Decker,35
+Coffee Maker,Black+Decker,in_set_exact,BLACK+DECKER,1
+Coffee Maker,Blue Bottle Coffee,out_of_set_candidate,Blue Bottle Coffee,18
+Coffee Maker,Blue Bottle Coffee,out_of_set_candidate,Blue Bottle,6
+Coffee Maker,Bonavita,in_set_exact,Bonavita,576
+Coffee Maker,Bosch,out_of_set_candidate,Bosch,6
+Coffee Maker,Braun,in_set_exact,Braun,189
+Coffee Maker,Breville,in_set_exact,Breville,1375
+Coffee Maker,Breville,in_set_exact,Breville** *,2
+Coffee Maker,Brewista,out_of_set_candidate,Brewista,1
+Coffee Maker,Café,out_of_set_candidate,Café,1
+Coffee Maker,Cafelat,out_of_set_candidate,Cafelat Robot,13
+Coffee Maker,Cafelat,out_of_set_candidate,Cafelat,1
+Coffee Maker,Capresso,in_set_exact,Capresso,11
+Coffee Maker,Chemex,out_of_set_candidate,Chemex,126
+Coffee Maker,Comandante,out_of_set_candidate,Comandante,89
+Coffee Maker,Counter Culture Coffee,out_of_set_candidate,Counter Culture Coffee,52
+Coffee Maker,Counter Culture Coffee,out_of_set_candidate,Counter Culture,10
+Coffee Maker,Cremina,out_of_set_candidate,Cremina,1
+Coffee Maker,Cuisinart,in_set_exact,Cuisinart,705
+Coffee Maker,Dalla Corte,out_of_set_candidate,Dalla Corte,22
+Coffee Maker,Decent Espresso,out_of_set_candidate,Decent Espresso,208
+Coffee Maker,DeLonghi,in_set_alias,De'Longhi,658
+Coffee Maker,DeLonghi,in_set_exact,Delonghi,23
+Coffee Maker,DeLonghi,in_set_exact,DeLonghi,17
+Coffee Maker,DeLonghi,in_set_alias,De'Longhi** *,2
+Coffee Maker,DeLonghi,in_set_alias,De'Longhi**,1
+Coffee Maker,ECM,out_of_set_candidate,ECM,644
+Coffee Maker,Elektra,out_of_set_candidate,Elektra,7
+Coffee Maker,Espro,out_of_set_candidate,Espro,1
+Coffee Maker,Fellow,out_of_set_candidate,Fellow,227
+Coffee Maker,Flair Espresso,out_of_set_candidate,Flair Espresso,132
+Coffee Maker,Flair Espresso,out_of_set_candidate,Flair,60
+Coffee Maker,Flair Espresso,out_of_set_candidate,Flair 58,4
+Coffee Maker,Flair Espresso,out_of_set_candidate,Flair Espresso Maker,2
+Coffee Maker,Gaggia,in_set_exact,Gaggia,307
+Coffee Maker,George Howell Coffee,out_of_set_candidate,George Howell Coffee,18
+Coffee Maker,Hamilton Beach,in_set_exact,Hamilton Beach,210
+Coffee Maker,Hario,out_of_set_candidate,Hario,228
+Coffee Maker,Heart Coffee Roasters,out_of_set_candidate,Heart Coffee Roasters,2
+Coffee Maker,Illy,out_of_set_candidate,Illy,42
+Coffee Maker,Intelligentsia Coffee,out_of_set_candidate,Intelligentsia,75
+Coffee Maker,Intelligentsia Coffee,out_of_set_candidate,Intelligentsia Coffee,23
+Coffee Maker,James Coffee Co.,out_of_set_candidate,James Coffee Co.,1
+Coffee Maker,Jura,in_set_exact,Jura,430
+Coffee Maker,Jura,in_set_exact,Jura** *,3
+Coffee Maker,Jura,in_set_exact,Jura**,1
+Coffee Maker,Kalita,out_of_set_candidate,Kalita,44
+Coffee Maker,Kalita,out_of_set_candidate,Kalita Wave,7
+Coffee Maker,Kees van der Westen,out_of_set_candidate,Kees van der Westen,27
+Coffee Maker,Keurig,in_set_exact,Keurig,455
+Coffee Maker,Kim Express,out_of_set_candidate,Kim Express,1
+Coffee Maker,La Marzocco,in_set_exact,La Marzocco,917
+Coffee Maker,La Marzocco,in_set_alias,Linea Mini,2
+Coffee Maker,La Pavoni,out_of_set_candidate,La Pavoni,70
+Coffee Maker,Lavazza,out_of_set_candidate,Lavazza,42
+Coffee Maker,Lelit,out_of_set_candidate,Lelit,497
+Coffee Maker,Leverpresso,out_of_set_candidate,Leverpresso,12
+Coffee Maker,Londinium,out_of_set_candidate,Londinium,1
+Coffee Maker,Londinium,out_of_set_candidate,Londinium Espresso,1
+Coffee Maker,Mahlkönig,out_of_set_candidate,Mahlkönig,4
+Coffee Maker,Melitta,out_of_set_candidate,Melitta,1
+Coffee Maker,Miele,out_of_set_candidate,Miele,177
+Coffee Maker,Miele,out_of_set_candidate,Miele**,1
+Coffee Maker,Modbar,out_of_set_candidate,Modbar,3
+Coffee Maker,Mr. Coffee,in_set_exact,Mr. Coffee,95
+Coffee Maker,Nespresso,in_set_exact,Nespresso,531
+Coffee Maker,Ninja,in_set_exact,Ninja,352
+Coffee Maker,Nomad,out_of_set_candidate,Nomad,3
+Coffee Maker,Olympia Express,out_of_set_candidate,Olympia Express,3
+Coffee Maker,Onyx Coffee Lab,out_of_set_candidate,Onyx Coffee Lab,60
+Coffee Maker,OXO,in_set_exact,OXO,615
+Coffee Maker,OXO,in_set_alias,OXO Brew,9
+Coffee Maker,OXO,in_set_exact,Oxo,7
+Coffee Maker,Passenger Coffee,out_of_set_candidate,Passenger Coffee,1
+Coffee Maker,Peet's Coffee,out_of_set_candidate,Peet's Coffee,21
+Coffee Maker,Peet's Coffee,out_of_set_candidate,Peet's,4
+Coffee Maker,Philips,in_set_exact,Philips,497
+Coffee Maker,Philips,in_set_alias,Philips 3200,1
+Coffee Maker,Philips,in_set_exact,Philips** *,1
+Coffee Maker,Philips Saeco,out_of_set_candidate,Philips Saeco,1
+Coffee Maker,Proctor Silex,out_of_set_candidate,Proctor Silex,12
+Coffee Maker,Profitec,out_of_set_candidate,Profitec,616
+Coffee Maker,Quick Mill,out_of_set_candidate,Quick Mill,2
+Coffee Maker,Rancilio,out_of_set_candidate,Rancilio,500
+Coffee Maker,Rancilio,out_of_set_candidate,Rancilio Silvia,2
+Coffee Maker,Ratio,out_of_set_candidate,Ratio,75
+Coffee Maker,Rocket Espresso,out_of_set_candidate,Rocket Espresso,564
+Coffee Maker,Rocket Espresso,out_of_set_candidate,Rocket,2
+Coffee Maker,ROK,out_of_set_candidate,ROK,2
+Coffee Maker,Saeco,out_of_set_candidate,Saeco,20
+Coffee Maker,Sanremo,out_of_set_candidate,Sanremo,1
+Coffee Maker,Sey Coffee,out_of_set_candidate,Sey Coffee,1
+Coffee Maker,Siemens,out_of_set_candidate,Siemens,13
+Coffee Maker,Slayer,out_of_set_candidate,Slayer,179
+Coffee Maker,Slayer,out_of_set_candidate,Slayer Espresso,1
+Coffee Maker,Spinn,out_of_set_candidate,Spinn,1
+Coffee Maker,Square Mile Coffee Roasters,out_of_set_candidate,Square Mile Coffee Roasters,4
+Coffee Maker,Strega,out_of_set_candidate,Strega,1
+Coffee Maker,Stumptown Coffee Roasters,out_of_set_candidate,Stumptown Coffee Roasters,54
+Coffee Maker,Stumptown Coffee Roasters,out_of_set_candidate,Stumptown,36
+Coffee Maker,Sweet Maria's,out_of_set_candidate,Sweet Maria's,24
+Coffee Maker,Synesso,out_of_set_candidate,Synesso,66
+Coffee Maker,Tassimo,out_of_set_candidate,Tassimo,1
+Coffee Maker,Technivorm,in_set_alias,Technivorm Moccamaster,510
+Coffee Maker,Technivorm,in_set_exact,Technivorm,297
+Coffee Maker,Technivorm,in_set_alias,Moccamaster,9
+Coffee Maker,Timemore,out_of_set_candidate,Timemore,14
+Coffee Maker,Verve Coffee Roasters,out_of_set_candidate,Verve Coffee Roasters,1
+Coffee Maker,Victoria Arduino,out_of_set_candidate,Victoria Arduino,29
+Coffee Maker,Weber Workshops,out_of_set_candidate,Weber Workshops,3
+Coffee Maker,Zojirushi,out_of_set_candidate,Zojirushi,30
+Cordless Drill,Black+Decker,in_set_exact,Black+Decker,380
+Cordless Drill,Black+Decker,in_set_exact,BLACK+DECKER,20
+Cordless Drill,Black+Decker,in_set_alias,Black & Decker,8
+Cordless Drill,Bosch,in_set_exact,Bosch,1005
+Cordless Drill,Bosch,in_set_alias,Bosch Professional,115
+Cordless Drill,Bosch,in_set_exact,BOSCH,11
+Cordless Drill,Bosch,in_set_alias,Bosch Professional** *,1
+Cordless Drill,Craftsman,in_set_exact,Craftsman,334
+Cordless Drill,Craftsman,in_set_exact,CRAFTSMAN,1
+Cordless Drill,Dewalt,in_set_exact,DeWalt,1297
+Cordless Drill,Dewalt,in_set_exact,DEWALT,11
+Cordless Drill,Dewalt,in_set_exact,Dewalt,4
+Cordless Drill,Festool,in_set_exact,Festool,34
+Cordless Drill,Hart,in_set_exact,Hart,52
+Cordless Drill,Hilti,in_set_exact,Hilti,589
+Cordless Drill,Kobalt,in_set_exact,Kobalt,24
+Cordless Drill,Makita,in_set_exact,Makita,1194
+Cordless Drill,Metabo HPT,in_set_exact,Metabo HPT,83
+Cordless Drill,Metabo HPT,in_set_exact,Metabo HPT** *,12
+Cordless Drill,Metabo HPT,in_set_alias,Metabo,4
+Cordless Drill,Milwaukee,in_set_exact,Milwaukee,1049
+Cordless Drill,Milwaukee,in_set_alias,Milwaukee Tool,8
+Cordless Drill,Porter-Cable,in_set_exact,Porter-Cable,16
+Cordless Drill,Ridgid,in_set_exact,Ridgid,49
+Cordless Drill,Ryobi,in_set_exact,Ryobi,721
+Cordless Drill,Skil,in_set_exact,Skil,132
+Cordless Drill,Skil,in_set_exact,SKIL,8
+Cordless Drill,Wen,out_of_set_candidate,Wen,1
+Cordless Drill,Worx,in_set_exact,Worx,36
+Cordless Drill,Worx,in_set_exact,WORX,1
+Hiking Jacket,Altra,out_of_set_candidate,Altra,1
+Hiking Jacket,Arc'teryx,in_set_exact,Arc'teryx,1885
+Hiking Jacket,Bergans of Norway,out_of_set_candidate,Bergans of Norway,2
+Hiking Jacket,Beyond Clothing,out_of_set_candidate,Beyond Clothing,2
+Hiking Jacket,Black Diamond,in_set_exact,Black Diamond,299
+Hiking Jacket,Black Diamond,in_set_alias,Black Diamond Equipment,1
+Hiking Jacket,Columbia,in_set_exact,Columbia,766
+Hiking Jacket,Cotopaxi,out_of_set_candidate,Cotopaxi,195
+Hiking Jacket,Decathlon,out_of_set_candidate,Decathlon,357
+Hiking Jacket,Decathlon,out_of_set_candidate,Decathlon Quechua,2
+Hiking Jacket,Deuter,out_of_set_candidate,Deuter,3
+Hiking Jacket,Eddie Bauer,in_set_exact,Eddie Bauer,129
+Hiking Jacket,Fair Rags,out_of_set_candidate,Fair Rags,1
+Hiking Jacket,Finisterre,out_of_set_candidate,Finisterre,22
+Hiking Jacket,Fjällräven,out_of_set_candidate,Fjällräven,691
+Hiking Jacket,Fjällräven,out_of_set_candidate,Fjallraven,77
+Hiking Jacket,Gregory,out_of_set_candidate,Gregory,2
+Hiking Jacket,Haglöfs,out_of_set_candidate,Haglöfs,12
+Hiking Jacket,Haglöfs,out_of_set_candidate,Haglofs,3
+Hiking Jacket,Houdini Sportswear,out_of_set_candidate,Houdini,139
+Hiking Jacket,Houdini Sportswear,out_of_set_candidate,Houdini Sportswear,114
+Hiking Jacket,Jack Wolfskin,in_set_exact,Jack Wolfskin,16
+Hiking Jacket,Kathmandu,in_set_exact,Kathmandu,1
+Hiking Jacket,KEEN,out_of_set_candidate,Keen,65
+Hiking Jacket,KEEN,out_of_set_candidate,KEEN,8
+Hiking Jacket,Klättermusen,out_of_set_candidate,Klättermusen,23
+Hiking Jacket,Klättermusen,out_of_set_candidate,Klattermusen,1
+Hiking Jacket,L.L.Bean,in_set_exact,L.L.Bean,56
+Hiking Jacket,L.L.Bean,in_set_alias,L.L. Bean,9
+Hiking Jacket,L.L.Bean,in_set_alias,LL Bean,1
+Hiking Jacket,Mammut,in_set_exact,Mammut,801
+Hiking Jacket,Marmot,in_set_exact,Marmot,708
+Hiking Jacket,Merrell,out_of_set_candidate,Merrell,167
+Hiking Jacket,Montane,in_set_exact,Montane,39
+Hiking Jacket,Montbell,out_of_set_candidate,Montbell,61
+Hiking Jacket,Mountain Equipment,in_set_exact,Mountain Equipment,253
+Hiking Jacket,Mountain Hardwear,in_set_exact,Mountain Hardwear,203
+Hiking Jacket,Mountain Warehouse,out_of_set_candidate,Mountain Warehouse,1
+Hiking Jacket,Nikwax,out_of_set_candidate,Nikwax,1
+Hiking Jacket,Nikwax Analogy,out_of_set_candidate,Nikwax Analogy,2
+Hiking Jacket,Norrøna,out_of_set_candidate,Norrøna,582
+Hiking Jacket,Norrøna,out_of_set_candidate,Norrona,76
+Hiking Jacket,Norrøna,out_of_set_candidate,Norr na,4
+Hiking Jacket,Norrøna,out_of_set_candidate,Norr n a,1
+Hiking Jacket,Norrøna,out_of_set_candidate,Norr øna,1
+Hiking Jacket,Nudie Jeans,out_of_set_candidate,Nudie Jeans,1
+Hiking Jacket,Oboz,out_of_set_candidate,Oboz,16
+Hiking Jacket,Ortovox,out_of_set_candidate,Ortovox,10
+Hiking Jacket,Osprey,out_of_set_candidate,Osprey,5
+Hiking Jacket,Outdoor Research,in_set_exact,Outdoor Research,1086
+Hiking Jacket,Páramo,out_of_set_candidate,Páramo,116
+Hiking Jacket,Patagonia,in_set_exact,Patagonia,1977
+Hiking Jacket,Picture Organic Clothing,out_of_set_candidate,Picture Organic Clothing,171
+Hiking Jacket,Picture Organic Clothing,out_of_set_candidate,Picture Organic,20
+Hiking Jacket,prAna,out_of_set_candidate,prAna,5
+Hiking Jacket,Rab,in_set_exact,Rab,1194
+Hiking Jacket,REI Co-op,in_set_exact,REI Co-op,868
+Hiking Jacket,REI Co-op,in_set_alias,REI,44
+Hiking Jacket,Salewa,out_of_set_candidate,Salewa,6
+Hiking Jacket,Salomon,out_of_set_candidate,Salomon,43
+Hiking Jacket,Sierra Designs,out_of_set_candidate,Sierra Designs,2
+Hiking Jacket,tentree,out_of_set_candidate,Tentree,22
+Hiking Jacket,tentree,out_of_set_candidate,tentree,5
+Hiking Jacket,The North Face,in_set_exact,The North Face,729
+Hiking Jacket,The North Face,in_set_alias,The North Face Summit Series,1
+Hiking Jacket,Thule,out_of_set_candidate,Thule,2
+Hiking Jacket,Toad&Co,out_of_set_candidate,Toad&Co,3
+Hiking Jacket,Vasque,out_of_set_candidate,Vasque,3
+Hiking Jacket,VAUDE,out_of_set_candidate,Vaude,229
+Hiking Jacket,VAUDE,out_of_set_candidate,VAUDE,59

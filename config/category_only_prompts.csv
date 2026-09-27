@@ -1,0 +1,6 @@
+category,sub_category,prompt_condition,theme,dimension,rating_field,direction,prompt_id,prompt
+Cordless Drill,cordless drills,context-free-ranked,Category only,,,,co-cd,"I'm looking for a cordless drill. What specific brands would you recommend? Please list up to five brands, in order of recommendation."
+Hiking Jacket,hiking jacket,context-free-ranked,Category only,,,,co-hj,"I'm looking for a hiking jacket. What specific brands would you recommend? Please list up to five brands, in order of recommendation."
+Coffee Maker,coffee maker,context-free-ranked,Category only,,,,co-cm,"I'm looking for a coffee maker. What specific brands would you recommend? Please list up to five brands, in order of recommendation."
+Cat Food,cat food,context-free-ranked,Category only,,,,co-cf,"I'm looking for cat food. What specific brands would you recommend? Please list up to five brands, in order of recommendation."
+Boat Cruise,boat cruises,context-free-ranked,Category only,,,,co-bc,"I'm looking for a boat cruise. What specific brands would you recommend? Please list up to five brands, in order of recommendation."

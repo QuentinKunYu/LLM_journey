@@ -1,0 +1,38 @@
+{
+  "category_only": {
+    "categories": 5,
+    "models": 6,
+    "prompts_per_category": 1,
+    "replicates_per_prompt_model": 40,
+    "expected_responses": 1200
+  },
+  "positioning": {
+    "positioning_dimensions": 8,
+    "prompts_per_endpoint": 3,
+    "prompts": 48,
+    "models": 6,
+    "replicates_per_prompt_model": 40,
+    "expected_responses": 11520
+  },
+  "generation": {
+    "fresh_session_no_history": true,
+    "web_search": false,
+    "followup_reasons": false,
+    "temperature_for_supported_providers": 0.7,
+    "max_output_tokens": 800,
+    "ranking_cutoff": 5
+  },
+  "ndcg": {
+    "metric": "NDCG@5",
+    "gain": "linear relevance score",
+    "discount": "log2(rank + 1)",
+    "high_endpoint_relevance": "score",
+    "low_endpoint_relevance": "6 - score",
+    "ideal_ranking": "top five directional relevance values among rated brands in the final evaluation set for the category",
+    "zero_relevance": [
+      "missing rank",
+      "brand without a final evaluation-set key",
+      "duplicate canonical brand after its first occurrence"
+    ]
+  }
+}
