@@ -23,5 +23,6 @@
 9. **The displayed correlation tables do not match the supplied merged CSV.** `analysis/summarize-marketplace-results.R` recomputes the descriptive correlations from the exact supplied dataset, but the resulting values differ from the manuscript tables. The dataset or table-generation code used for those displayed values is still needed.
 10. **Dimensionality assessment is not yet documented.** The manuscript's evaluation process calls for assessing dimensionality, but no factor-analysis input, script, or output was found among the supplied materials.
 11. **Redistribution rights must be checked.** Some marketplace variables come from licensed commercial sources. Confirm that row-level values may be shared in an anonymous public artifact; otherwise provide an access-controlled version or a derived-data alternative permitted by the source licenses.
+12. **The manuscript still contains unresolved placeholders.** The repository URL, one construct-development citation, and the brand-level example values in the needs-based results are still shown as placeholders. These must be filled only after the final data and analysis version is frozen.
 
 This file is intentionally explicit so that unresolved methods decisions are not hidden by a polished repository layout.

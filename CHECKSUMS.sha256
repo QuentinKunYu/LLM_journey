@@ -1,7 +1,7 @@
 7b5284f15ed36bb3a16f67065f3a45bd62ecc43150538b529301f55b032d1444  ./.env.example
 401901a8dcc4eb0f9a759b0b18e7a2839251fe4eaa0a6832a929582467a70b7e  ./.gitignore
 d9849db04663542212267e9ec9af14fa17a2a92647358cfa7e5fa6327152196b  ./README.md
-fa593e98462fc9e36fbdb162d4124b465a3db3b65ddba6a713608239c450545e  ./REPRODUCIBILITY_STATUS.md
+b1e6a83aa527bb52af5fb93a49de0527eff19fb1171b063e8ce33b9e31d655ec  ./REPRODUCIBILITY_STATUS.md
 1e04a4193a025cbd4a22d99c53a39a17e8daf8f266d64f55c0da485b27e15a68  ./analysis/analyze-category-only.js
 7c5dcdeaf856f7ff386798e67c6f9979f38ad1bfa3dc52a601ff46beb45a6f62  ./analysis/plot-category-only-results.R
 95f6ec48eefd960cd1a05e55cf9ee32b19d31b0891aedb2501742fdbd2113131  ./analysis/plot-positioning-results.R
