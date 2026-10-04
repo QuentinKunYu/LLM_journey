@@ -1,0 +1,4 @@
+key,brand,category,decision,reason,source_date
+CM20,Nescafe,Coffee Maker,exclude,"Coffee brand in the United States, not a coffee-machine brand",2026-09-17
+HJ13,Jack Wolfskin,Hiking Jacket,exclude,No longer distributed in the United States,2026-09-17
+HJ20,Gill,Hiking Jacket,exclude,Marine niche rather than a general hiking-jacket brand,2026-09-17

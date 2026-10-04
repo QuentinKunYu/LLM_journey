@@ -2,5 +2,8 @@ node_modules/
 .env
 .DS_Store
 data/runs/
+provenance/_local_email_recovery/
 *.html
 *.log
+!docs/positiondims.html
+!docs/inter-rater-reliability.html

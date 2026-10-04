@@ -34,11 +34,31 @@ assert.equal(positioningLatest.size, 11520);
 assert.equal(csv('config/category_only_prompts.csv').length, 5);
 assert.equal(csv('config/positioning_prompts.csv').length, 48);
 assert.equal(csv('config/composite_positioning_mapping.csv').length, 48);
-assert.equal(csv('data/processed/positioning_recommendations_and_ndcg.csv').length, 11520);
+const positioningRecommendations = csv('data/processed/positioning_recommendations_and_ndcg.csv');
+assert.equal(positioningRecommendations.length, 11520);
 assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'models.json'), 'utf8')).models.length, 6);
 assert.equal(csv('data/processed/final_evaluation_set.csv').length, 212);
+assert.equal(csv('data/processed/competitive_set_review.csv').length, 276);
+assert.equal(csv('data/processed/competitive_set_exclusions.csv').length, 3);
+assert.equal(csv('data/processed/brand_positioning_scores.csv').length, 215);
+assert.equal(csv('data/processed/positioning_dimensions.csv').length, 212);
 assert.equal(csv('data/processed/inter_rater_reliability.csv').length, 16);
 assert.equal(csv('data/marketplace/merged_marketplace_dataset.csv').length, 100);
+assert(fs.existsSync(path.join(ROOT, 'docs', 'positiondims.html')));
+assert(fs.existsSync(path.join(ROOT, 'docs', 'inter-rater-reliability.html')));
+
+const diyRecommendations = positioningRecommendations.filter(row => (
+  row.category === 'Cordless Drill' && row.target_endpoint === 'low'
+));
+assert.equal(diyRecommendations.length, 720);
+function brpAtFive(rows, brandKey) {
+  return rows.filter(row => [1, 2, 3, 4, 5].some(rank => (
+    row[`brand_key_${rank}`] === brandKey
+  ))).length / rows.length;
+}
+assert.equal(brpAtFive(diyRecommendations, 'CD3'), 335 / 720);
+assert.equal(brpAtFive(diyRecommendations, 'CD13'), 140 / 720);
+assert.equal(brpAtFive(diyRecommendations, 'CD16'), 0);
 
 const venueAcronyms = [
   ['E', 'C', 'I', 'R'].join(''),
@@ -47,20 +67,29 @@ const venueAcronyms = [
 const identifyingTerms = [
   ['Q', 'u', 'e', 'n', 't', 'i', 'n'].join(''),
   ['K', 'u', 'n', 'Y', 'u'].join(''),
+  ['E', 'd', 'w', 'a', 'r', 'd', ' ', 'M', 'a', 'l', 't', 'h', 'o', 'u', 's', 'e'].join(''),
+  ['S', 'a', 'n', 'c', 'h', 'a', 'r', 'y', ' ', 'P', 'a', 'l'].join(''),
   ['/', 'U', 's', 'e', 'r', 's', '/', 'q', 'u', 'e', 'n', 't', 'i', 'n'].join(''),
 ];
-const textExtensions = new Set(['.md', '.json', '.jsonl', '.js', '.R', '.Rmd', '.csv', '.example', '.gitignore']);
+const textExtensions = new Set(['.md', '.json', '.jsonl', '.js', '.R', '.Rmd', '.csv', '.html', '.example', '.gitignore']);
 const hits = [];
 const secretHits = [];
 function walk(directory) {
   for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
-    if (entry.name === 'node_modules' || entry.name === '.git') continue;
+    if (
+      entry.name === 'node_modules'
+      || entry.name === '.git'
+      || entry.name === '_local_email_recovery'
+      || entry.name === 'runs'
+    ) continue;
     const filename = path.join(directory, entry.name);
     if (entry.isDirectory()) walk(filename);
     else if (textExtensions.has(path.extname(entry.name)) || ['README.md', '.gitignore'].includes(entry.name)) {
       const text = fs.readFileSync(filename, 'utf8');
-      const hasVenueName = venueAcronyms.some(term => text.includes(term));
-      const hasIdentity = identifyingTerms.some(term => text.toLowerCase().includes(term.toLowerCase()));
+      const hasVenueName = path.extname(entry.name) !== '.html'
+        && venueAcronyms.some(term => text.includes(term));
+      const hasIdentity = identifyingTerms.some(term => text.toLowerCase().includes(term.toLowerCase()))
+        || /\/Users\/[A-Za-z0-9._-]+\//.test(text);
       if (hasVenueName || hasIdentity) {
         hits.push(path.relative(ROOT, filename));
       }
@@ -79,7 +108,14 @@ console.log(JSON.stringify({
   positioning_tasks: positioningLatest.size,
   positioning_source_files: positioningFiles.length,
   final_evaluation_set_brands: 212,
+  positioning_score_brands: 215,
+  competitive_set_review_rows: 276,
   reliability_dimensions: 16,
+  diy_brp_at_5: {
+    craftsman: brpAtFive(diyRecommendations, 'CD3'),
+    skil: brpAtFive(diyRecommendations, 'CD13'),
+    bauer: brpAtFive(diyRecommendations, 'CD16'),
+  },
   marketplace_rows: 100,
   anonymization_scan: 'passed',
   credential_scan: 'passed',

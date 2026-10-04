@@ -1,61 +1,69 @@
 # Evaluation protocol
 
-## Scope
+## Categories and models
 
-The artifact evaluates open-ended brand recommendations in five categories: boat cruises, cat food, coffee makers, cordless drills, and hiking jackets. The configured systems are GPT-5.5, GPT-5.4 Mini, Gemini 3.1 Pro Preview, Gemini 2.5 Flash, Claude Opus 4.7, and Claude Sonnet 4.6.
+The study covers boat cruises, cat food, coffee makers, cordless drills, and hiking jackets. The six systems are GPT-5.5, GPT-5.4 Mini, Gemini 3.1 Pro Preview, Gemini 2.5 Flash, Claude Opus 4.7, and Claude Sonnet 4.6.
 
-Every request was issued in a fresh session with no conversation history, web search, or follow-up question. When supported, temperature was 0.7. Responses were capped at 800 output tokens and requested no more than five ranked brands.
+Requests were made through provider APIs in fresh sessions without conversation history. Web search and other retrieval tools were disabled. Temperature was set to 0.7 when supported, output was capped at 800 tokens, and every prompt requested no more than five ranked brands.
+
+## Competitive sets
+
+Competitive sets were defined independently of the experimental outputs using U.S. market availability. The final set has 212 brands: 37 boat-cruise brands, 58 cat-food brands, 56 coffee-maker brands, 20 cordless-drill brands, and 41 hiking-jacket brands.
+
+`data/processed/competitive_set_review.csv` preserves the 276-brand review-stage table and its available notes. The averaged ratings cover 215 brands. `data/processed/competitive_set_exclusions.csv` records the three final exclusions that reduce that set to 212 brands. `data/processed/final_evaluation_set.csv` contains the final set used for the needs-based evaluation. The complete decision trail from 276 reviewed brands to 215 rated brands, including the underlying retailer and source URLs, was not preserved in the available archive.
 
 ## Category-only evaluation
 
-There is one category-only prompt per category. Each prompt was sent to all six models in 40 separate repetitions:
+There is one category-only prompt per category. Each was sent to all six models in 40 independent repetitions:
 
-`5 categories × 6 models × 40 repetitions = 1,200 recommendation lists`.
+`5 categories × 6 models × 40 repetitions = 1,200 recommendation lists`
 
-The exact prompts are in `config/category_only_prompts.csv`; the archived responses are in `data/raw/category-only/responses.jsonl`. The principal measures are brand recommendation prevalence at ranks 1, 3, and 5 and mean reciprocal rank at 5. `analysis/analyze-category-only.js` recomputes these measures from the archived responses.
+The prompts are in `config/category_only_prompts.csv`; the responses are in `data/raw/category-only/responses.jsonl`. `analysis/analyze-category-only.js` recomputes BRP@1, BRP@3, BRP@5, and brand-level MRR@5.
 
-## Positioning and need-matching evaluation
+Raw ranked names are preserved. The alias file in `config/brand_aliases_initial.csv` maps name variants to canonical brands. Duplicates are collapsed to their highest-ranked occurrence. Invalid, out-of-category, ambiguous, and unverifiable entities are kept separate from valid brands.
 
-The study uses eight composite positioning dimensions distributed across the five categories. Each dimension has a low and high endpoint, and each endpoint is represented by three natural-language prompts. This gives 48 prompts:
+## Needs-based evaluation
 
-`8 dimensions × 2 endpoints × 3 prompts = 48 prompts`.
+Three independent raters scored brands on 16 original category attributes. The reported interval Krippendorff's alpha values range from .730 to .995 and are stored in `data/processed/inter_rater_reliability.csv`. The rendered calculation report is `docs/inter-rater-reliability.html`. Independent recomputation still requires the missing item-level rating workbook.
 
-Every prompt was sent to all six models in 40 separate repetitions:
+Correlations and factor analyses were used to combine related attributes and retain distinct ones. The full rendered analysis is in `docs/positiondims.html`. The eight final dimensions are:
 
-`48 prompts × 6 models × 40 repetitions = 11,520 recommendation lists`.
+- DIY to professional use for cordless drills
+- mass-market to specialized and intimate for boat cruises
+- everyday to technical use and low to high sustainability for hiking jackets
+- mainstream to premium and general-purpose to veterinary-recommended for cat food
+- low to high brewing involvement and drip to espresso orientation for coffee makers
 
-The prompts are in `config/positioning_prompts.csv`; the prompt-to-dimension mapping is in `config/composite_positioning_mapping.csv`; the six archived source ledgers are in `data/raw/positioning/`.
+The averaged original attributes are in `data/processed/brand_positioning_scores.csv`; the final dimension scores are in `data/processed/positioning_dimensions.csv`. `analysis/construct-positioning-dimensions.R` reconstructs those composites after applying the final exclusions.
 
-## Brand resolution
+Each dimension has two endpoints and three prompts per endpoint, for 48 prompts. Each prompt was sent to six models in 40 independent repetitions:
 
-The raw ranked names are preserved. Name variants are resolved to canonical brands using the alias file in `config/brand_aliases_initial.csv`. Invalid products, ambiguous compound answers, duplicates within a recommendation list, and brands without a key in the final evaluation set do not receive relevance credit. The initial name-variant, duplicate, and out-of-set audits are retained under `provenance/initial_115_brand_analysis/`.
+`48 prompts × 6 models × 40 repetitions = 11,520 recommendation lists`
 
-The final evaluation set contains 212 brands: 37 boat-cruise brands, 58 cat-food brands, 56 coffee-maker brands, 20 cordless-drill brands, and 41 hiking-jacket brands.
+The prompts are in `config/positioning_prompts.csv`, the endpoint mapping is in `config/composite_positioning_mapping.csv`, and the six response ledgers are in `data/raw/positioning/`.
 
-## Graded relevance and NDCG@5
+## NDCG@5
 
-The processed positioning-score table contains averaged ratings on the original category attributes. Composite scores are computed as specified in `analysis/recompute-positioning-ndcg.js`. A high-endpoint prompt uses the composite score directly; a low-endpoint prompt uses `6 - score`.
+Brand-positioning scores provide graded relevance. For each endpoint, scores are oriented so that larger values indicate a closer match. Missing ranks, duplicate canonical brands after their first occurrence, unresolved brands, and brands outside the final evaluation set receive zero relevance.
 
-The available reliability output reports interval Krippendorff's alpha for three independent ratings on 16 original dimensions. Those reported values are stored in `data/processed/inter_rater_reliability.csv`. `analysis/recompute-inter-rater-reliability.R` contains the exact column specification needed to recompute them once the missing item-level workbook is supplied.
+For ranks 1 through 5:
 
-For each recommendation list, linear discounted cumulative gain is
+`DCG@5 = sum(relevance at rank r / log2(r + 1))`
 
-`DCG@5 = sum(relevance at rank r / log2(r + 1))` for ranks 1 through 5.
-
-The ideal DCG uses the five largest directional relevance scores among rated brands in that category's final evaluation set. NDCG@5 is `DCG@5 / IDCG@5`. Missing, duplicated, unresolved, or out-of-set brands receive zero relevance. `analysis/recompute-positioning-ndcg.js` independently recomputes all 11,520 stored values and fails if any value differs by more than `1e-10`.
+The ideal DCG uses the five largest directional relevance scores among rated brands in the relevant category. NDCG@5 is `DCG@5 / IDCG@5`. `analysis/recompute-positioning-ndcg.js` recalculates all 11,520 observations and fails if a stored value differs by more than `1e-10`.
 
 ## Marketplace measures
 
-The supplied marketplace files contain advertising expenditure, news mentions, Google search interest, Wikipedia pageviews, online discussion, and consumer brand-salience measures. Source definitions and collection periods are recorded in `data/marketplace/metric_metadata.csv`.
+The available files cover Vivvix advertising expenditure, LexisNexis news mentions, Google Trends search interest, Wikipedia pageviews, Brandwatch discussion, and Kantar BrandZ salience. Definitions and available collection details are in `data/marketplace/metric_metadata.csv`.
 
-`data/marketplace/brand_metrics_legacy.csv` contains the earlier merged outcome/predictor file. `analysis/analyze-category-only.js` also writes `brand_metrics_current.csv`, which replaces its recommendation outcomes with values from the current 1,200-response archive while preserving the available external predictors.
+The paper's Tables 1 and 2 use 209 brands, standardized predictors, category controls, fractional logit lasso, 10-fold cross-validation, and both `lambda.min` and `lambda.1se`. The exact final 209-brand file and the final four-model script are not present. Files under `data/marketplace/` are retained as related source extracts, not as a substitute for the missing final analysis file.
 
-## Rerunning model calls
+## Live reruns
 
-Recomputing the archived results requires no credentials. A paid live rerun requires provider keys in a local `.env` file copied from `.env.example`.
+Reanalysis of the archive needs no credentials. Paid model reruns require provider keys in a local `.env` copied from `.env.example`.
 
 - `analysis/run-live-smoke.js` makes one validation call per selected model.
-- `analysis/run-experiment.js` executes the full prompt ledger with resumable JSONL output.
-- `analysis/run-google-batch.js` runs the two Google models through the batch endpoint.
+- `analysis/run-experiment.js` runs the prompt ledger with resumable JSONL output.
+- `analysis/run-google-batch.js` runs the Google models through the batch endpoint.
 
-Output from new calls is written under the ignored `data/runs/` directory so it cannot overwrite the archived study files accidentally.
+New responses are written under the ignored `data/runs/` directory.
