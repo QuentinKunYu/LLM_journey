@@ -19,4 +19,4 @@
 | Table 1 correlations, 209 brands | Not present as the final analysis file | None | Missing |
 | Table 2 fractional-logit lasso models | Not present as the final four-model script | None | Missing |
 
-The two recommendation experiments and both figures can be reproduced from the repository. The remaining limits are recorded in `REPRODUCIBILITY_STATUS.md`.
+The two recommendation experiments and both figures can be reproduced from the repository. The table above identifies which other analyses require additional inputs.

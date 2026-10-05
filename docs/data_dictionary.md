@@ -39,4 +39,4 @@ The six JSONL files in `data/raw/positioning/` contain the needs-based task ledg
 
 ## Marketplace files
 
-`data/marketplace/metric_metadata.csv` defines the six external measures. The remaining files are available source extracts and intermediate merges. They do not constitute the final 209-brand Table 1 and Table 2 dataset. See `REPRODUCIBILITY_STATUS.md` before using them for manuscript claims.
+`data/marketplace/metric_metadata.csv` defines the six external measures. The remaining files are available source extracts and intermediate merges. They do not constitute the final 209-brand Table 1 and Table 2 dataset.

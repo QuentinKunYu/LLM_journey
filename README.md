@@ -67,7 +67,7 @@ Recomputing Krippendorff's alpha also requires the original item-level three-rat
 | `provenance/` | Manifest for the archived source files |
 | `CHECKSUMS.sha256` | SHA-256 checksums for the versioned artifact |
 
-See [`docs/protocol.md`](docs/protocol.md) for the implemented protocol and [`docs/manuscript_artifact_crosswalk.md`](docs/manuscript_artifact_crosswalk.md) for a direct mapping from the paper to the repository. Known limits are listed in [`REPRODUCIBILITY_STATUS.md`](REPRODUCIBILITY_STATUS.md).
+See [`docs/protocol.md`](docs/protocol.md) for the implemented protocol and [`docs/manuscript_artifact_crosswalk.md`](docs/manuscript_artifact_crosswalk.md) for a direct mapping from the paper to the repository.
 
 ## Optional live reruns
 
