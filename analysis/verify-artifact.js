@@ -44,6 +44,12 @@ assert.equal(csv('data/processed/brand_positioning_scores.csv').length, 215);
 assert.equal(csv('data/processed/positioning_dimensions.csv').length, 212);
 assert.equal(csv('data/processed/inter_rater_reliability.csv').length, 16);
 assert.equal(csv('data/marketplace/merged_marketplace_dataset.csv').length, 100);
+const figure1Brands = csv('data/marketplace/all_new_googletrends_wikipedia.csv');
+assert.equal(figure1Brands.length, 210);
+assert.equal(new Set(figure1Brands.map(row => row.Key)).size, 210);
+assert(figure1Brands.every(row => row.Category && row.logSearch));
+assert(fs.existsSync(path.join(ROOT, 'data', 'processed', 'Category_Only_Recommendations.xlsx')));
+assert(fs.existsSync(path.join(ROOT, 'analysis', 'figure1.Rmd')));
 assert(fs.existsSync(path.join(ROOT, 'docs', 'positiondims.html')));
 assert(fs.existsSync(path.join(ROOT, 'docs', 'inter-rater-reliability.html')));
 
@@ -117,6 +123,7 @@ console.log(JSON.stringify({
     bauer: brpAtFive(diyRecommendations, 'CD16'),
   },
   marketplace_rows: 100,
+  figure1_source_brands: figure1Brands.length,
   anonymization_scan: 'passed',
   credential_scan: 'passed',
 }, null, 2));

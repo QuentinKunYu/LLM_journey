@@ -24,6 +24,8 @@ Three independent raters scored brands on the original category attributes. The 
 
 The paper relates category-only recommendation prominence to advertising expenditure, news coverage, Google Trends search interest, Wikipedia pageviews, Brandwatch discussion, and Kantar BrandZ salience. The available source extracts and measure definitions are included. The exact 209-brand analysis file and final lasso script used for Tables 1 and 2 are not in the current archive, so those tables cannot yet be reproduced from this repository alone.
 
+Figure 1 uses the final category-only recommendation workbook and the 210-brand marketplace file supplied with the R Markdown source. Its plot script recomputes BRP@5 from the 1,200 recommendation lists. The paper's regression sample of 209 brands is a separate analysis sample; its final inclusion file is not included here.
+
 ## Reproduce the recommendation analyses
 
 Node.js 20 or newer is required.
@@ -37,12 +39,14 @@ npm test
 
 These commands recompute the category-only measures, independently verify all 11,520 stored NDCG@5 values, check the expected sample sizes, scan text files for identifying information and credentials, and run the brand-resolution tests.
 
-The two paper figures require R with `dplyr`, `ggplot2`, `ggrepel`, `readr`, and `tidyr`:
+The two paper figures require R with `dplyr`, `ggplot2`, `ggrepel`, `readr`, `readxl`, `stringr`, and `tidyr`:
 
 ```bash
 Rscript analysis/plot-category-only-results.R
 Rscript analysis/plot-positioning-results.R
 ```
+
+The Figure 1 source notebook is in `analysis/figure1.Rmd`. To render it, also install `rmarkdown`, `psych`, and `glmnet`, then run `rmarkdown::render("analysis/figure1.Rmd")` from the repository root.
 
 The positioning composites can be rebuilt with:
 

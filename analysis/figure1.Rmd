@@ -1,0 +1,162 @@
+---
+title: "Figure1"
+author: "anonymous"
+date: "2026-10-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(psych)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(ggplot2)
+library(ggrepel)
+library(glmnet)
+library(readxl)
+repo_root <- normalizePath("..")
+```
+```{r}
+catonly = read_excel(file.path(repo_root, "data/processed/Category_Only_Recommendations.xlsx"))
+dim(catonly)
+names(catonly)
+```
+
+# Number of recommendation lists in each category
+```{r}
+denom <- catonly %>%
+  count(category, name = "n_lists") %>%
+  rename(Category=category)
+dim(denom)
+denom
+```
+
+# Convert recommendations to long form
+```{r}
+catlong <- catonly %>%
+  mutate(list_id = row_number()) %>%
+  pivot_longer(
+    cols = brand_key_1:brand_key_5,
+    names_to = "rankvar",
+    values_to = "Key"
+  ) %>%
+  mutate(
+    rank = as.integer(str_extract(rankvar, "\\d+$")),
+    Key = na_if(trimws(Key), "")
+  ) %>%
+  filter(!is.na(Key)) %>%
+  
+  # In case the same canonical brand somehow appears twice in one list,
+  # retain only its highest-ranked occurrence
+  arrange(list_id, rank) %>%
+  distinct(list_id, Key, .keep_all = TRUE) %>%
+  select(category, replicate, Key, rank)
+dim(catlong)
+names(catlong)
+head(catlong)
+```
+
+```{r}
+brandstats <- catlong %>%
+  group_by(Key) %>%
+  summarise(
+    n_rec = n(),
+    rr_sum = sum(1 / rank),
+    .groups = "drop"
+  )
+dim(brandstats)
+names(brandstats)
+head(brandstats)
+all = read.csv(file.path(repo_root, "data/marketplace/all_new_googletrends_wikipedia.csv")) %>%
+  select(Key, Category, Brand, BrandShort, 
+         Meaningful, Different, Salient, DemandPower, PricingPower,
+         logAdSpend, logWiki, logNews, logSearch, logBrandwatch)
+dim(all)
+describe(all)
+all %>% distinct(Key) %>% count() # confirmed pk
+```
+
+
+```{r}
+catmetrics <- all %>%
+  left_join(brandstats, by = "Key") %>%
+  left_join(denom, by = "Category") %>%
+  mutate(
+    n_rec = coalesce(n_rec, 0L),
+    rr_sum = coalesce(rr_sum, 0),
+    BRP5 = n_rec / n_lists,
+    MRR = rr_sum / n_lists
+  ) %>%
+  mutate(label = ifelse(
+    BRP5 >= .25 |  (BRP5<0.05 & logSearch >= 4),
+    Brand, NA_character_)
+  ) %>%
+  arrange(Category, desc(BRP5), logSearch)
+dim(catmetrics)
+head(catmetrics)
+describe(catmetrics)
+```
+
+```{r}
+label_brands <- c(
+  "Dewalt", "Milwaukee", "Makita", "Bosch", "Ryobi", "Black+Decker", "Craftsman", 
+    "Skil", "Flex", "Ridgid",
+  "Royal Caribbean", "Carnival", "Viking", "NCL", "Princess", "Celebrity", "MSC",
+    "Holland America", "Disney", "Silversea", "Windstar",
+  "Patagonia", "Arc'teryx", "North Face", "Columbia", "Marmot", "Outdoor Research", 
+    "Black Diamond", "Mammut", "Rab", "Eddie Bauer", "L.L.Bean", "REI",
+    "Merrell", "Salomon",
+  "Breville", "Keurig", "Cuisinart", "Nespresso", "Ninja", "Technivorm", "DeLonghi", "Mr. Coffee",
+    "Hamilton Beach", "OXO", "Bonavita", "KitchenAid", "Bosch",
+  "Purina", "Royal Canin", "Hill's", "Blue Buffalo", "IAMS", "Wellness", 
+    "Fancy Feast", "Friskies", "Orijen", "Purina Pro Plan", "9 Lives"
+)
+```
+
+```{r}
+catmetrics %>%
+  ggplot(aes(logSearch, y = BRP5)) +
+  geom_point() +
+  #geom_text_repel(aes(label = BrandShort), cex = 1.7, show.legend = FALSE) +
+  geom_text_repel(data = subset(catmetrics, BrandShort %in% label_brands), 
+      aes(label=BrandShort), size=1.7, max.overlaps=Inf, na.rm=TRUE) +
+  facet_wrap(~ Category) +
+  labs(x = "log(Search)", y = "Brand recommendation probability (BRP@5)") +
+  theme(strip.text = element_text(size = 8)) +
+  theme(axis.title.y=element_text(size=8), 
+        axis.title.x=element_text(size=8))
+```
+
+
+```{r}
+catmetrics %>%
+  ggplot(aes(logSearch, y = MRR)) +
+  geom_point() +
+  #  geom_text_repel(aes(label = BrandShort), cex = 1.7, show.legend = FALSE) +
+  geom_text_repel(data = subset(catmetrics, BrandShort %in% label_brands), 
+                  aes(label=BrandShort), size=1.7, max.overlaps=Inf, na.rm=TRUE) +
+  facet_wrap(~ Category) +
+  theme(strip.text = element_text(size = 8)) +
+  theme(axis.title.y=element_text(size=8), 
+        axis.title.x=element_text(size=8)) +
+  labs(x = "log(Search)", y = "Mean Reciprocal Rank (MRR)")
+```
+
+```{r}
+catmetrics %>%
+  group_by(Category) %>%
+  summarise(
+    cor_Search_MRR = cor(logSearch, MRR, use = "complete.obs"),
+    cor_brandwatch = cor(logBrandwatch, MRR, use = "complete.obs"),
+    cor_owned = cor(logAdSpend, MRR, use = "complete.obs"),
+    cor_earned = cor(logNews, MRR, use = "complete.obs"),
+    cor_Wiki = cor(logWiki, MRR, use = "complete.obs"),
+    cor_salient = cor(Salient, MRR, use = "complete.obs")
+  )
+```
+
+
