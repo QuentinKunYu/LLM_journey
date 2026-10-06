@@ -37,11 +37,39 @@ assert.equal(csv('config/composite_positioning_mapping.csv').length, 48);
 const positioningRecommendations = csv('data/processed/positioning_recommendations_and_ndcg.csv');
 assert.equal(positioningRecommendations.length, 11520);
 assert.equal(JSON.parse(fs.readFileSync(path.join(ROOT, 'config', 'models.json'), 'utf8')).models.length, 6);
-assert.equal(csv('data/processed/final_evaluation_set.csv').length, 212);
+const finalSet = csv('data/processed/final_evaluation_set.csv');
+const positioningScores = csv('data/processed/brand_positioning_scores.csv');
+const excludedKeys = new Set(csv('data/processed/competitive_set_exclusions.csv').map(row => row.key));
+assert.equal(finalSet.length, 212);
 assert.equal(csv('data/processed/competitive_set_review.csv').length, 276);
-assert.equal(csv('data/processed/competitive_set_exclusions.csv').length, 3);
-assert.equal(csv('data/processed/brand_positioning_scores.csv').length, 215);
-assert.equal(csv('data/processed/positioning_dimensions.csv').length, 212);
+assert.equal(excludedKeys.size, 3);
+assert.equal(positioningScores.length, 215);
+assert.deepEqual(
+  new Set(finalSet.map(row => row.Key)),
+  new Set(positioningScores.filter(row => !excludedKeys.has(row.Key)).map(row => row.Key)),
+);
+const ratingsByKey = new Map(positioningScores.map(row => [row.Key, row]));
+for (const row of finalSet) {
+  const rating = ratingsByKey.get(row.Key);
+  for (const field of Object.keys(rating)) {
+    const source = rating[field];
+    const finalValue = row[field];
+    if (source === '' || source === 'NA') assert(finalValue === '' || finalValue === 'NA', `${row.Key}: ${field}`);
+    else if (Number.isFinite(Number(source)) && field !== 'Key') {
+      assert(Math.abs(Number(source) - Number(finalValue)) < 1e-9, `${row.Key}: ${field}`);
+    } else assert.equal(finalValue, source, `${row.Key}: ${field}`);
+  }
+}
+const dimensions = csv('data/processed/positioning_dimensions.csv');
+assert.equal(dimensions.length, 212);
+for (const row of dimensions.filter(row => row.Category === 'Boat Cruise')) {
+  const rating = ratingsByKey.get(row.Key);
+  const expected = (
+    (6 - Number(rating.VesselBig)) + Number(rating.Service)
+    + Number(rating.Conventional_Expedition) + Number(rating.Family_AdultOnly)
+  ) / 4;
+  assert(Math.abs(Number(row.CruiseL_H) - expected) < 1e-10, `Cruise score direction mismatch: ${row.Key}`);
+}
 assert.equal(csv('data/processed/inter_rater_reliability.csv').length, 16);
 assert.equal(csv('data/marketplace/merged_marketplace_dataset.csv').length, 100);
 const figure1Brands = csv('data/marketplace/all_new_googletrends_wikipedia.csv');

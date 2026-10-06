@@ -18,7 +18,7 @@ The needs-based evaluation covers eight positioning dimensions. Each dimension h
 
 `8 dimensions × 2 endpoints × 3 prompts × 6 models × 40 repetitions = 11,520 lists`
 
-Three independent raters scored brands on the original category attributes. The repository includes the averaged ratings, the 212-brand final evaluation set, the final composite dimensions, the factor-analysis report, the reported reliability coefficients, all recommendation lists, and the code that recomputes NDCG@5. The item-level rater workbook is not included.
+Three LLM raters (Gemini, ChatGPT, and Claude) scored brands on the original category attributes. The repository includes the averaged ratings, the 212-brand final evaluation set, the final composite dimensions, the factor-analysis report, the reported reliability coefficients, all recommendation lists, and the code that recomputes NDCG@5. The item-level rater workbook is not included.
 
 ### Marketplace analysis
 
@@ -48,7 +48,7 @@ Rscript analysis/plot-positioning-results.R
 
 The Figure 1 source notebook is in `analysis/figure1.Rmd`. To render it, also install `rmarkdown`, `psych`, and `glmnet`, then run `rmarkdown::render("analysis/figure1.Rmd")` from the repository root.
 
-The positioning composites can be rebuilt with:
+The 212-brand final set and positioning composites can be rebuilt from the averaged scores and the three recorded exclusions with:
 
 ```bash
 Rscript analysis/construct-positioning-dimensions.R

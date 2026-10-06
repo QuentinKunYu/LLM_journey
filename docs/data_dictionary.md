@@ -26,7 +26,7 @@ The six JSONL files in `data/raw/positioning/` contain the needs-based task ledg
 - `data/processed/competitive_set_review.csv`: 276-brand review-stage table with category, available notes, scores, and source-row highlight codes retained from the recovered workbook.
 - `data/processed/competitive_set_exclusions.csv`: three final exclusions and recorded reasons.
 - `data/processed/brand_positioning_scores.csv`: averaged scores on the 16 original category attributes for 215 brands before the final exclusions.
-- `data/processed/final_evaluation_set.csv`: the 212 brands used for the final needs-based analysis, with the available original attribute scores.
+- `data/processed/final_evaluation_set.csv`: the 212 brands used for the final needs-based analysis, with the available original attribute scores. Its keys and scores were checked against the later 212-row averaged-rating workbook.
 - `data/processed/positioning_dimensions.csv`: the eight final composite or retained positioning dimensions for the 212-brand set.
 - `data/processed/inter_rater_reliability.csv`: category, original dimension, number of subjects, three raters, and reported Krippendorff's alpha.
 - `docs/positiondims.html`: rendered correlations, factor analyses, reliability checks, and composite construction.

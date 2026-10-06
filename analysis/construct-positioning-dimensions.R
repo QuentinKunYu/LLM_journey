@@ -13,12 +13,17 @@ exclusions <- read_csv(
   show_col_types = FALSE
 )
 
-final <- scores %>%
-  filter(!Key %in% exclusions$key) %>%
+final_ratings <- scores %>%
+  filter(!Key %in% exclusions$key)
+
+stopifnot(nrow(final_ratings) == 212L)
+write_csv(final_ratings, "data/processed/final_evaluation_set.csv", na = "NA")
+
+final <- final_ratings %>%
   mutate(
     CruiseL_H = (
-      VesselBig + (6 - Service) +
-        (6 - Conventional_Expedition) + (6 - Family_AdultOnly)
+      (6 - VesselBig) + Service +
+        Conventional_Expedition + Family_AdultOnly
     ) / 4,
     jacketL_H = (Technical + (6 - Urban) + Value) / 3,
     catfoodL_H = (Science_Natural + Trad_UltPrem) / 2,
@@ -31,6 +36,5 @@ final <- scores %>%
     Drip_Espresso
   )
 
-stopifnot(nrow(final) == 212L)
 write_csv(final, "data/processed/positioning_dimensions.csv", na = "NA")
-message("Wrote 212 rows to data/processed/positioning_dimensions.csv")
+message("Wrote 212 rows to both final evaluation and positioning dimension files")

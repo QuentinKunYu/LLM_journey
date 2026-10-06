@@ -7,8 +7,8 @@
 | BRP@1, BRP@3, BRP@5, and brand-level MRR@5 | `analysis/analyze-category-only.js` | `npm run analyze:category` | Complete |
 | Figure 1 | `analysis/figure1.Rmd`, `data/processed/Category_Only_Recommendations.xlsx`, `data/marketplace/all_new_googletrends_wikipedia.csv` | `Rscript analysis/plot-category-only-results.R` | Source and inputs included |
 | Competitive-set review and final 212 brands | `data/processed/competitive_set_review.csv`, `competitive_set_exclusions.csv`, `final_evaluation_set.csv` | `npm run verify` | Final set included; full 276-to-215 decision trail and source URLs absent |
-| Sixteen original positioning attributes | `data/processed/brand_positioning_scores.csv` | Inspection | Averaged scores complete |
-| Three-rater reliability | `data/processed/inter_rater_reliability.csv`, `docs/inter-rater-reliability.html`, `analysis/recompute-inter-rater-reliability.R` | Needs the missing item-level workbook | Summary complete; raw ratings missing |
+| Sixteen original positioning attributes | `data/processed/brand_positioning_scores.csv`, `data/processed/final_evaluation_set.csv` | Inspection and `npm run verify` | Averaged scores complete; final 212 rows checked against the later averaged-rating workbook |
+| Three-LLM-rater reliability | `data/processed/inter_rater_reliability.csv`, `docs/inter-rater-reliability.html`, `analysis/recompute-inter-rater-reliability.R` | Needs the missing item-level workbook | Summary complete; raw ratings missing |
 | Correlations and factor analysis | `docs/positiondims.html` | Rendered report | Included |
 | Eight final positioning dimensions | `data/processed/positioning_dimensions.csv`, `analysis/construct-positioning-dimensions.R` | `Rscript analysis/construct-positioning-dimensions.R` | Complete |
 | Forty-eight needs-based prompts | `config/positioning_prompts.csv`, `config/composite_positioning_mapping.csv` | `npm run verify` | Complete |

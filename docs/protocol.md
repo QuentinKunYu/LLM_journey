@@ -24,7 +24,7 @@ Raw ranked names are preserved. The alias file in `config/brand_aliases_initial.
 
 ## Needs-based evaluation
 
-Three independent raters scored brands on 16 original category attributes. The reported interval Krippendorff's alpha values range from .730 to .995 and are stored in `data/processed/inter_rater_reliability.csv`. The rendered calculation report is `docs/inter-rater-reliability.html`. Independent recomputation still requires the missing item-level rating workbook.
+Three LLM raters (Gemini, ChatGPT, and Claude) scored brands on 16 original category attributes. The reported interval Krippendorff's alpha values range from .730 to .995 and are stored in `data/processed/inter_rater_reliability.csv`. The rendered calculation report is `docs/inter-rater-reliability.html`. Independent recomputation still requires the missing item-level rating workbook.
 
 Correlations and factor analyses were used to combine related attributes and retain distinct ones. The full rendered analysis is in `docs/positiondims.html`. The eight final dimensions are:
 
@@ -34,7 +34,7 @@ Correlations and factor analyses were used to combine related attributes and ret
 - mainstream to premium and general-purpose to veterinary-recommended for cat food
 - low to high brewing involvement and drip to espresso orientation for coffee makers
 
-The averaged original attributes are in `data/processed/brand_positioning_scores.csv`; the final dimension scores are in `data/processed/positioning_dimensions.csv`. `analysis/construct-positioning-dimensions.R` reconstructs those composites after applying the final exclusions.
+The averaged original attributes are in `data/processed/brand_positioning_scores.csv`; the final dimension scores are in `data/processed/positioning_dimensions.csv`. `analysis/construct-positioning-dimensions.R` rebuilds the 212-brand final set and its composites after applying the final exclusions. For the cruise dimension, larger scores indicate smaller, more specialized ships; this is the same orientation used to compute NDCG@5.
 
 Each dimension has two endpoints and three prompts per endpoint, for 48 prompts. Each prompt was sent to six models in 40 independent repetitions:
 
