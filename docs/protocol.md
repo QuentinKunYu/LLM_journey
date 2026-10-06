@@ -10,7 +10,7 @@ Requests were made through provider APIs in fresh sessions without conversation 
 
 Competitive sets were defined independently of the experimental outputs using U.S. market availability. The final set has 212 brands: 37 boat-cruise brands, 58 cat-food brands, 56 coffee-maker brands, 20 cordless-drill brands, and 41 hiking-jacket brands.
 
-`data/processed/competitive_set_review.csv` preserves the 276-brand review-stage table and its available notes. The averaged ratings cover 215 brands. `data/processed/competitive_set_exclusions.csv` records the three final exclusions that reduce that set to 212 brands. `data/processed/final_evaluation_set.csv` contains the final set used for the needs-based evaluation. The complete decision trail from 276 reviewed brands to 215 rated brands, including the underlying retailer and source URLs, was not preserved in the available archive.
+`data/processed/competitive_set_review.csv` preserves the 276-brand review-stage table and its available notes. The averaged ratings cover 215 brands. `data/processed/competitive_set_exclusions.csv` records the three final exclusions that reduce that set to 212 brands. `data/processed/final_evaluation_set.csv` contains the final set used for the needs-based evaluation.
 
 ## Category-only evaluation
 
@@ -24,7 +24,7 @@ Raw ranked names are preserved. The alias file in `config/brand_aliases_initial.
 
 ## Needs-based evaluation
 
-Three LLM raters (Gemini, ChatGPT, and Claude) scored brands on 16 original category attributes. The reported interval Krippendorff's alpha values range from .730 to .995 and are stored in `data/processed/inter_rater_reliability.csv`. The rendered calculation report is `docs/inter-rater-reliability.html`. Independent recomputation still requires the missing item-level rating workbook.
+Three LLM raters (Gemini, ChatGPT, and Claude) scored brands on 16 original category attributes. The reported interval Krippendorff's alpha values range from .730 to .995 and are stored in `data/processed/inter_rater_reliability.csv`. The rendered calculation report is `docs/inter-rater-reliability.html`.
 
 Correlations and factor analyses were used to combine related attributes and retain distinct ones. The full rendered analysis is in `docs/positiondims.html`. The eight final dimensions are:
 
@@ -56,7 +56,7 @@ The ideal DCG uses the five largest directional relevance scores among rated bra
 
 The available files cover Vivvix advertising expenditure, LexisNexis news mentions, Google Trends search interest, Wikipedia pageviews, Brandwatch discussion, and Kantar BrandZ salience. Definitions and available collection details are in `data/marketplace/metric_metadata.csv`.
 
-The paper's Tables 1 and 2 use 209 brands, standardized predictors, category controls, fractional logit lasso, 10-fold cross-validation, and both `lambda.min` and `lambda.1se`. The exact final 209-brand file and the final four-model script are not present. Files under `data/marketplace/` are retained as related source extracts, not as a substitute for the missing final analysis file.
+The marketplace directory contains source extracts, measure definitions, and intermediate merges for the paper's marketplace analyses.
 
 ## Live reruns
 

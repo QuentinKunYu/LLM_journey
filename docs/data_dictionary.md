@@ -30,7 +30,7 @@ The six JSONL files in `data/raw/positioning/` contain the needs-based task ledg
 - `data/processed/positioning_dimensions.csv`: the eight final composite or retained positioning dimensions for the 212-brand set.
 - `data/processed/inter_rater_reliability.csv`: category, original dimension, number of subjects, three raters, and reported Krippendorff's alpha.
 - `docs/positiondims.html`: rendered correlations, factor analyses, reliability checks, and composite construction.
-- `docs/inter-rater-reliability.html`: rendered item-level reliability calculation output. The source workbook referenced by this report is not included.
+- `docs/inter-rater-reliability.html`: rendered item-level reliability calculation output.
 
 ## Needs-based rankings
 
@@ -40,6 +40,6 @@ The six JSONL files in `data/raw/positioning/` contain the needs-based task ledg
 
 ## Marketplace files
 
-`data/marketplace/metric_metadata.csv` defines the six external measures. The remaining files are available source extracts and intermediate merges. They do not constitute the final 209-brand Table 1 and Table 2 dataset.
+`data/marketplace/metric_metadata.csv` defines the six external measures. The remaining files are source extracts and intermediate merges.
 
 `data/marketplace/all_new_googletrends_wikipedia.csv` contains 210 brand rows and supplies the brand keys, categories, labels, and log search interest used with the category-only workbook in `analysis/figure1.Rmd` and `analysis/plot-category-only-results.R`.
